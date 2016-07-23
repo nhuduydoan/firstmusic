@@ -12,7 +12,6 @@
 		5C6A480F1D43DA0200D39301 /* NDDTabarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6A480E1D43DA0200D39301 /* NDDTabarItem.m */; };
 		5C6A48111D43DACC00D39301 /* NDDTabbarItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C6A48101D43DACC00D39301 /* NDDTabbarItem.xib */; };
 		5C6A48181D43E05400D39301 /* ic_music.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6A48171D43E05400D39301 /* ic_music.png */; };
-		5C6A481A1D43E05C00D39301 /* ic_songs.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6A48191D43E05C00D39301 /* ic_songs.png */; };
 		5C6A481C1D43E51200D39301 /* ic_search.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6A481B1D43E51200D39301 /* ic_search.png */; };
 		5CE73A171D3D15A1000877A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE73A161D3D15A1000877A1 /* main.m */; };
 		5CE73A1A1D3D15A1000877A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE73A191D3D15A1000877A1 /* AppDelegate.m */; };
@@ -33,7 +32,6 @@
 		5C6A480E1D43DA0200D39301 /* NDDTabarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDDTabarItem.m; sourceTree = "<group>"; };
 		5C6A48101D43DACC00D39301 /* NDDTabbarItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NDDTabbarItem.xib; sourceTree = "<group>"; };
 		5C6A48171D43E05400D39301 /* ic_music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_music.png; sourceTree = "<group>"; };
-		5C6A48191D43E05C00D39301 /* ic_songs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_songs.png; sourceTree = "<group>"; };
 		5C6A481B1D43E51200D39301 /* ic_search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_search.png; sourceTree = "<group>"; };
 		5CE73A121D3D15A1000877A1 /* FirstMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE73A161D3D15A1000877A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				5C6A48171D43E05400D39301 /* ic_music.png */,
-				5C6A48191D43E05C00D39301 /* ic_songs.png */,
 				5C6A481B1D43E51200D39301 /* ic_search.png */,
 			);
 			path = Images;
@@ -254,7 +251,6 @@
 				5CE73A221D3D15A1000877A1 /* Assets.xcassets in Resources */,
 				5CE73A461D3D2115000877A1 /* FMHomeTableViewCell.xib in Resources */,
 				5C6A48111D43DACC00D39301 /* NDDTabbarItem.xib in Resources */,
-				5C6A481A1D43E05C00D39301 /* ic_songs.png in Resources */,
 				5C6A48181D43E05400D39301 /* ic_music.png in Resources */,
 				5CE73A441D3D2115000877A1 /* FMHomeViewController.xib in Resources */,
 				5C5BF7C21D3E887D004338C9 /* NDDTabBarController.xib in Resources */,
