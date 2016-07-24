@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *iconTabbar;
 @property (weak, nonatomic) IBOutlet UILabel *tiltTabbar;
+@property (weak, nonatomic) IBOutlet UIView *lineView;
 
 @end
 
@@ -42,6 +43,11 @@
     [super setFrame:frame];
     
     NSLog(@"");
+}
+
+- (void) setLineViewColor:(UIColor *)color {
+    
+    self.lineView.backgroundColor = color;
 }
 
 @end

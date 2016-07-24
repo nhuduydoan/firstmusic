@@ -8,35 +8,36 @@
 
 #import <UIKit/UIKit.h>
 
-@class FMTabBar;
+@class NDDTabBar;
 
-@protocol FMTabBarDelegate<NSObject>
+@protocol NDDTabBarDelegate<NSObject>
 
 @optional
 
-- (void)tabBar:(FMTabBar *)tabBar didSelectItem:(UITabBarItem *)item;
+- (void)tabBar:(NDDTabBar *)tabBar didSelectItem:(UITabBarItem *)item;
 
 @end
 
-@interface FMTabBar : UIView
+@interface NDDTabBar : UIView
 
-@property(nonatomic,assign) id<FMTabBarDelegate> delegate;
+@property(nonatomic,assign) id<NDDTabBarDelegate> delegate;
 @property(nonatomic,strong) NSArray *items;
 @property(nonatomic,weak) UITabBarItem *selectedItem;
 
-@property(nonatomic,retain) IBInspectable UIColor *tintColor;
 @property(nonatomic,retain) IBInspectable UIColor *tinSelectedColor;
+@property(nonatomic,retain) IBInspectable UIColor *backgroungSelectedColor;
+@property (nonatomic, retain) IBInspectable UIColor *lineItemColor;
 
 @end
 
 @interface NDDTabBarController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UIView *contentView;
-@property (weak, nonatomic) IBOutlet FMTabBar *tabbar;
+@property (weak, nonatomic) IBOutlet NDDTabBar *tabbar;
 @property (nonatomic, strong) NSArray *viewControllers;
 @property (nonatomic,readonly) BOOL hiddenTabbar;
 
 - (void)setSelectedViewControllerIndex:(NSInteger)index;
-
 - (void)hideTabbar:(BOOL) hidden withAnamiation:(BOOL) animation;
 
 @end

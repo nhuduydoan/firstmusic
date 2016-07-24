@@ -39,21 +39,21 @@
     self.isHideTabBar = !self.isHideTabBar;
     if (self.isHideTabBar) {
         
-        CGRect frame = self.view.frame;
-        frame.origin.y = - frame.size.height;
-        UIViewController *view = [[UIViewController alloc] init];
-        [self addChildViewController:view];
-        view.view.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleWidth |UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin |UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleBottomMargin;
-        [view.view setBackgroundColor:[UIColor redColor]];
-        [view didMoveToParentViewController:self];
-        [view.view setFrame:frame];
-        [self.view addSubview:view.view];
+//        CGRect frame = self.view.frame;
+//        frame.origin.y = - frame.size.height;
+//        UIViewController *view = [[UIViewController alloc] init];
+//        [self addChildViewController:view];
+//        view.view.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleWidth |UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin |UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleBottomMargin;
+//        [view.view setBackgroundColor:[UIColor redColor]];
+//        [view didMoveToParentViewController:self];
+//        [view.view setFrame:frame];
+//        [self.view addSubview:view.view];
         
         [[NSNotificationCenter defaultCenter] postNotificationName:@"HideTabBar" object:nil];
-        [UIView animateWithDuration:0.25 animations:^{
-            
-            [view.view setFrame:self.view.frame];
-        }];
+//        [UIView animateWithDuration:0.25 animations:^{
+//            
+//            [view.view setFrame:self.view.frame];
+//        }];
         
     } else {
         

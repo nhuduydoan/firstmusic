@@ -25,9 +25,9 @@
                 <view contentMode="scaleToFill" id="aab-78-h45" userLabel="Ads">
                     <rect key="frame" x="0.0" y="469" width="320" height="50"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                    <color key="backgroundColor" red="1" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.96470588235294119" green="0.22067343640300766" blue="0.69411751228718421" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
-                <view contentMode="scaleToFill" id="sRz-iG-C7l" userLabel="tabbar" customClass="FMTabBar">
+                <view contentMode="scaleToFill" id="sRz-iG-C7l" userLabel="tabbar" customClass="NDDTabBar">
                     <rect key="frame" x="0.0" y="519" width="320" height="49"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

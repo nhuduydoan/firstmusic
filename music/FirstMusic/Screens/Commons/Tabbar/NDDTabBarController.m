@@ -17,14 +17,14 @@
 @end
 
 
-@interface FMTabBar()<NDDTabbarItemDelegate>
+@interface NDDTabBar()<NDDTabbarItemDelegate>
 
 @property (nonatomic, strong) NSMutableArray *arrayButton;
 @property (nonatomic, strong) UIView *topLineView;
 
 @end
 
-@implementation FMTabBar
+@implementation NDDTabBar
 
 - (instancetype)init {
     
@@ -74,11 +74,16 @@
 
 - (void) setUpTabBarView {
     
+    // First Init color for view
+    // Please setup on NDDTabBarController's viewDidLoad function to change
+    self.tinSelectedColor = [UIColor redColor];
+    self.backgroungSelectedColor = [UIColor blueColor];
+    self.lineItemColor = [UIColor clearColor];
+    
     self.topLineView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 0.5f)];
     self.topLineView.userInteractionEnabled = NO;
     self.topLineView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-    self.topLineView.backgroundColor = [UIColor clearColor];
-    self.backgroundColor = [UIColor lightGrayColor];
+    self.topLineView.backgroundColor = [UIColor blackColor];
     [self addSubview:self.topLineView];
 }
 
@@ -101,6 +106,7 @@
         UITabBarItem *tabItem = self.items[index];
         UIImage *image = [tabItem.image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
         NDDTabbarItem *button = [[NDDTabbarItem alloc] initWithText:tabItem.title icon:image];
+        [button setLineViewColor:self.lineItemColor];
         button.delegate = self;
         button.tag = index;
         [self.arrayButton addObject:button];
@@ -174,12 +180,12 @@
         if (i == index) {
             
             viewItem.tintColor = self.tinSelectedColor;
-            [viewItem setBackgroundColor:[UIColor lightGrayColor]];
+            [viewItem setBackgroundColor:self.backgroungSelectedColor];
             
         } else {
             
             viewItem.tintColor = self.tintColor;
-            [viewItem setBackgroundColor:[UIColor lightGrayColor]];
+            [viewItem setBackgroundColor:[UIColor clearColor]];
         }
     }
 }
@@ -204,7 +210,7 @@
  *  **************************************************************
  */
 
-@interface NDDTabBarController ()<UITabBarControllerDelegate, FMTabBarDelegate, UITabBarDelegate>
+@interface NDDTabBarController ()<UITabBarControllerDelegate, NDDTabBarDelegate, UITabBarDelegate>
 
 @property (nonatomic) BOOL isProVersion;
 
@@ -220,10 +226,7 @@
     [super viewDidLoad];
     
     self.hideTabBar = NO;
-    [self.tabbar setDelegate:self];
-    self.tabbar.backgroundColor = [UIColor clearColor];
-    self.tabbar.tintColor = [UIColor whiteColor];
-    self.tabbar.tinSelectedColor = [UIColor orangeColor];
+    [self setUpColorForTabBar];
     [self setViewControllers:self.viewControllers];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hideTabbar) name:@"HideTabBar" object:nil];
@@ -243,8 +246,17 @@
 - (void) viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
     [self updateLayout];
-} 
+}
 
+- (void) setUpColorForTabBar {
+    
+    [self.tabbar setDelegate:self];
+    [self.tabbar setTintColor:[UIColor whiteColor]];
+    [self.tabbar setTinSelectedColor:[UIColor redColor]];
+    [self.tabbar.topLineView setBackgroundColor:[UIColor clearColor]];
+    [self.tabbar setBackgroundColor:[UIColor lightGrayColor]];
+    [self.tabbar setBackgroungSelectedColor:[UIColor blueColor]];
+}
 
 #pragma mark - public method
 
