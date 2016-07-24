@@ -25,6 +25,7 @@
         self = [[[NSBundle mainBundle] loadNibNamed:@"NDDTabbarItem" owner:self options:nil] objectAtIndex:0];
         self.iconTabbar.image = image;
         self.tiltTabbar.text = text;
+        
     }
     
     return self;

@@ -40,15 +40,30 @@
     FMNavigationController *navHomeView = [[FMNavigationController alloc] initWithRootViewController:homeView];
     homeView.title = @"Genres";
     navHomeView.tabBarItem.title = @"Genres";
-    [navHomeView.tabBarItem setImage:[UIImage imageNamed:@"ic_music"]];
+    [navHomeView.tabBarItem setImage:[UIImage imageNamed:@"home"]];
+    
     
     FMHomeViewController *tab2 = [[FMHomeViewController alloc] init];
     FMNavigationController *navTab2 = [[FMNavigationController alloc] initWithRootViewController:tab2];
     tab2.title = @"Search";
     navTab2.tabBarItem.title = @"Search";
-    [navTab2.tabBarItem setImage:[UIImage imageNamed:@"ic_search"]];
+    [navTab2.tabBarItem setImage:[UIImage imageNamed:@"icon_tab_search"]];
     
-    return @[navHomeView, navTab2];
+    FMHomeViewController *myPlaylist = [[FMHomeViewController alloc] init];
+    FMNavigationController *navMyPlaylist = [[FMNavigationController alloc] initWithRootViewController:myPlaylist];
+    myPlaylist.title = @"MyPlaylist";
+    navMyPlaylist.tabBarItem.title = @"MyList";
+    [navMyPlaylist.tabBarItem setImage:[UIImage imageNamed:@"icon_Tabbar_playlist"]];
+    
+    FMHomeViewController *settingView = [[FMHomeViewController alloc] init];
+    FMNavigationController *navSettingView = [[FMNavigationController alloc] initWithRootViewController:settingView];
+    settingView.title = @"Setting";
+    navSettingView.tabBarItem.title = @"Setting";
+    [navSettingView.tabBarItem setImage:[UIImage imageNamed:@"icon_Tabbar_setting_left"]];
+    
+    
+    
+    return @[navHomeView, navTab2, navMyPlaylist, navSettingView];
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {

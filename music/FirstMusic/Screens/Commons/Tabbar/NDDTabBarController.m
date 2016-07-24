@@ -78,7 +78,7 @@
     self.topLineView.userInteractionEnabled = NO;
     self.topLineView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     self.topLineView.backgroundColor = [UIColor clearColor];
-    self.backgroundColor = [UIColor grayColor];
+    self.backgroundColor = [UIColor lightGrayColor];
     [self addSubview:self.topLineView];
 }
 
@@ -174,7 +174,7 @@
         if (i == index) {
             
             viewItem.tintColor = self.tinSelectedColor;
-            [viewItem setBackgroundColor:[UIColor blueColor]];
+            [viewItem setBackgroundColor:[UIColor lightGrayColor]];
             
         } else {
             
@@ -221,7 +221,9 @@
     
     self.hideTabBar = NO;
     [self.tabbar setDelegate:self];
-    self.tabbar.backgroundColor = [UIColor lightGrayColor];
+    self.tabbar.backgroundColor = [UIColor clearColor];
+    self.tabbar.tintColor = [UIColor whiteColor];
+    self.tabbar.tinSelectedColor = [UIColor orangeColor];
     [self setViewControllers:self.viewControllers];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hideTabbar) name:@"HideTabBar" object:nil];

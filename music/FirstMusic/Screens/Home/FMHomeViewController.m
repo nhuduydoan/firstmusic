@@ -8,6 +8,8 @@
 
 #import "FMHomeViewController.h"
 #import "FMHomeTableViewCell.h"
+#import "APISoundcCoud.h"
+#import "FMPlayerViewController.h"
 
 #define HomeCell @"HomeTableViewCell"
 
@@ -26,19 +28,10 @@
     if (self) {
         
         _listDatas = [NSMutableArray new];
-        [self setupData];
+        [self getDataBaseAPI];
     }
     
     return self;
-}
-
-- (void) setupData {
-    
-    for (int i = 0; i < 10; i ++) {
-        
-        NSString *testString = [NSString stringWithFormat:@"Music %d", i];
-        [self.listDatas addObject:testString];
-    }
 }
 
 - (void)viewDidLoad {
@@ -46,6 +39,20 @@
     // Do any additional setup after loading the view from its nib.
     
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([FMHomeTableViewCell class]) bundle:nil] forCellReuseIdentifier:HomeCell];
+}
+-(void) getDataBaseAPI{
+    APISoundcCoud * api = [[APISoundcCoud alloc] init];
+    __weak typeof(self) weakSelf = self;
+    [api getAIP:^(NSData *data, NSError *error) {
+        if (!error) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                weakSelf.listDatas = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+                [_tableView reloadData];
+                NSLog(@"%@", weakSelf.listDatas);
+            });
+        }
+    }];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -70,8 +77,33 @@
         cell = [FMHomeTableViewCell cellWithIdentifier:HomeCell];
     }
 
-    [cell displayModel:[self.listDatas objectAtIndex:indexPath.row]];
+    [cell displayModel:[[self.listDatas objectAtIndex:indexPath.row] valueForKey:@"title"]];
     return cell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+//    if (self.isHideTabBar) {
+//        
+        CGRect frame = self.view.frame;
+        frame.origin.y = - frame.size.height;
+        UIViewController *view = [[UIViewController alloc] init];
+        [self addChildViewController:view];
+        view.view.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleWidth |UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin |UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleBottomMargin;
+        [view.view setBackgroundColor:[UIColor redColor]];
+        [view didMoveToParentViewController:self];
+        [view.view setFrame:frame];
+        [self.view addSubview:view.view];
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"HideTabBar" object:nil];
+        [UIView animateWithDuration:0.25 animations:^{
+            
+            [view.view setFrame:self.view.frame];
+        }];
+        
+//    } else {
+//        
+//        [[NSNotificationCenter defaultCenter] postNotificationName:@"ShowTabBar" object:nil];
+//    }
+
 }
 
 @end
