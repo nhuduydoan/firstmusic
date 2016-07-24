@@ -9,7 +9,8 @@
 #import "FMNavigationController.h"
 @interface FMNavigationController () <UINavigationControllerDelegate>
 
-@property (strong, nonatomic)  UIBarButtonItem *showPlayer;
+@property (strong, nonatomic) UIBarButtonItem *showPlayer;
+@property (strong, nonatomic) UINavigationController *playerVC;
 
 @end
 
@@ -38,11 +39,12 @@
 
 - (void) showPlayerViewController {
     
-    [self displayViewController:fmPlayer];
+    self.playerVC = [[UINavigationController alloc] initWithRootViewController:fmPlayer];
+    [self displayViewController:self.playerVC];
     
     [UIView animateWithDuration:0.25 animations:^{
         
-        [fmPlayer.view setFrame:self.view.frame];
+        [self.playerVC.view setFrame:self.view.frame];
     }];
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"HideTabBar" object:nil];
@@ -55,13 +57,14 @@
     
     [UIView animateWithDuration:0.25 animations:^{
         
-        [fmPlayer.view setFrame:self.view.frame];
+        [self.playerVC.view setFrame:self.view.frame];
         
     } completion:^(BOOL finished) {
         
-        [fmPlayer willMoveToParentViewController:nil];
-        [fmPlayer.view removeFromSuperview];
-        [fmPlayer  removeFromParentViewController];
+        [self.playerVC willMoveToParentViewController:nil];
+        [self.playerVC.view removeFromSuperview];
+        [self.playerVC removeFromParentViewController];
+        self.playerVC = nil;
     }];
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"ShowTabBar" object:nil];
