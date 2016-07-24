@@ -9,8 +9,7 @@
 #import "FMNavigationController.h"
 @interface FMNavigationController () <UINavigationControllerDelegate>
 
-@property (strong, nonatomic)  UIBarButtonItem *hideTabBarItem;
-@property (nonatomic) BOOL isHideTabBar;
+@property (strong, nonatomic)  UIBarButtonItem *showPlayer;
 
 @end
 
@@ -21,7 +20,10 @@
     // Do any additional setup after loading the view.
     
     self.delegate = self;
-    self.hideTabBarItem = [[UIBarButtonItem alloc] initWithTitle:@"Hide" style:UIBarButtonItemStylePlain target:self action:@selector(touchOnHideTabBarItem)];
+    self.showPlayer = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"arrowdown"] style:UIBarButtonItemStylePlain target:self action:@selector(showPlayerViewController)];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hidePlayerViewController) name:@"HidePlayerController" object:nil];
+    [self.navigationBar setTintColor:navigationbarTintColor];
+    [self.navigationBar setBackgroundColor:navigationbarBackgroundColor];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,34 +33,49 @@
 
 - (void) navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
     
-    viewController.navigationItem.rightBarButtonItem = self.hideTabBarItem;
+    viewController.navigationItem.rightBarButtonItem = self.showPlayer;
 }
 
-- (void) touchOnHideTabBarItem {
+- (void) showPlayerViewController {
     
-    self.isHideTabBar = !self.isHideTabBar;
-    if (self.isHideTabBar) {
+    [self displayViewController:fmPlayer];
+    
+    [UIView animateWithDuration:0.25 animations:^{
         
-//        CGRect frame = self.view.frame;
-//        frame.origin.y = - frame.size.height;
-//        UIViewController *view = [[UIViewController alloc] init];
-//        [self addChildViewController:view];
-//        view.view.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleWidth |UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin |UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleBottomMargin;
-//        [view.view setBackgroundColor:[UIColor redColor]];
-//        [view didMoveToParentViewController:self];
-//        [view.view setFrame:frame];
-//        [self.view addSubview:view.view];
+        [fmPlayer.view setFrame:self.view.frame];
+    }];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"HideTabBar" object:nil];
+}
+
+- (void) hidePlayerViewController {
+    
+    CGRect frame = self.view.bounds;
+    frame.origin.y = -frame.size.height;
+    
+    [UIView animateWithDuration:0.25 animations:^{
         
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"HideTabBar" object:nil];
-//        [UIView animateWithDuration:0.25 animations:^{
-//            
-//            [view.view setFrame:self.view.frame];
-//        }];
+        [fmPlayer.view setFrame:self.view.frame];
         
-    } else {
+    } completion:^(BOOL finished) {
         
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"ShowTabBar" object:nil];
-    }
+        [fmPlayer willMoveToParentViewController:nil];
+        [fmPlayer.view removeFromSuperview];
+        [fmPlayer  removeFromParentViewController];
+    }];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"ShowTabBar" object:nil];
+}
+
+- (void) displayViewController:(UIViewController *)childVC {
+    
+    [self addChildViewController:childVC];
+    [childVC didMoveToParentViewController:self];
+    CGRect frame = self.view.bounds;
+    frame.origin.y = - frame.size.height;
+    [childVC.view setFrame:frame];
+    childVC.view.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleWidth |UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin |UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleBottomMargin;
+    [self.view addSubview:childVC.view];
 }
 
 @end

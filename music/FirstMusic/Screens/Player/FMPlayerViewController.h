@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+#define fmPlayer [FMPlayerViewController shareInstance]
+
 @interface FMPlayerViewController : UIViewController
 
+@property (strong, nonatomic) FMTrackModel *currentTrack;
+
++ (instancetype) shareInstance;
+- (void) playWithTrack:(FMTrackModel *)track;
+ 
 @end

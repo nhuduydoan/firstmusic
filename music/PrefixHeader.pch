@@ -17,4 +17,8 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
+#import "FMApplication.h"
+#import "FMTrackModel.h"
+#import "FMPlayerViewController.h"
+
 #endif /* PrefixHeader_pch */

@@ -10,5 +10,5 @@
 #import "NDDTabBarController.h"
 
 @interface FMNavigationController : UINavigationController
--(void) touchOnHideTabBarItem;
+
 @end

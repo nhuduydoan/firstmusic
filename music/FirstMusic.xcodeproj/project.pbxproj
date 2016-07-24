@@ -11,6 +11,10 @@
 		5C5BF7C21D3E887D004338C9 /* NDDTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C5BF7C01D3E887D004338C9 /* NDDTabBarController.xib */; };
 		5C6A480F1D43DA0200D39301 /* NDDTabarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6A480E1D43DA0200D39301 /* NDDTabarItem.m */; };
 		5C6A48111D43DACC00D39301 /* NDDTabbarItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C6A48101D43DACC00D39301 /* NDDTabbarItem.xib */; };
+		5CB5FF681D4516FB005DC8F1 /* FMPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB5FF661D4516FB005DC8F1 /* FMPlayerViewController.m */; };
+		5CB5FF691D4516FB005DC8F1 /* FMPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB5FF671D4516FB005DC8F1 /* FMPlayerViewController.xib */; };
+		5CB5FF6D1D4518D2005DC8F1 /* FMTrackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB5FF6C1D4518D2005DC8F1 /* FMTrackModel.m */; };
+		5CB5FF701D452225005DC8F1 /* FMApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB5FF6F1D452225005DC8F1 /* FMApplication.m */; };
 		5CE73A171D3D15A1000877A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE73A161D3D15A1000877A1 /* main.m */; };
 		5CE73A1A1D3D15A1000877A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE73A191D3D15A1000877A1 /* AppDelegate.m */; };
 		5CE73A221D3D15A1000877A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE73A211D3D15A1000877A1 /* Assets.xcassets */; };
@@ -21,8 +25,6 @@
 		5CE73A461D3D2115000877A1 /* FMHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CE73A421D3D2115000877A1 /* FMHomeTableViewCell.xib */; };
 		5CE73A511D3D2251000877A1 /* FMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE73A501D3D2251000877A1 /* FMNavigationController.m */; };
 		FFC3DB601D4489F20036658A /* APISoundcCoud.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC3DB5F1D4489F20036658A /* APISoundcCoud.m */; };
-		FFC3DB671D448F6C0036658A /* FMPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC3DB651D448F6C0036658A /* FMPlayerViewController.m */; };
-		FFC3DB681D448F6C0036658A /* FMPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFC3DB661D448F6C0036658A /* FMPlayerViewController.xib */; };
 		FFC3DB6A1D4499FD0036658A /* btn_add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFC3DB691D4499FD0036658A /* btn_add@2x.png */; };
 		FFC3DC751D449A060036658A /* accesoryDetail.png in Resources */ = {isa = PBXBuildFile; fileRef = FFC3DB6B1D449A060036658A /* accesoryDetail.png */; };
 		FFC3DC761D449A060036658A /* accesoryDetail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFC3DB6C1D449A060036658A /* accesoryDetail@2x.png */; };
@@ -299,6 +301,13 @@
 		5C6A480D1D43DA0200D39301 /* NDDTabbarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDDTabbarItem.h; sourceTree = "<group>"; };
 		5C6A480E1D43DA0200D39301 /* NDDTabarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDDTabarItem.m; sourceTree = "<group>"; };
 		5C6A48101D43DACC00D39301 /* NDDTabbarItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NDDTabbarItem.xib; sourceTree = "<group>"; };
+		5CB5FF651D4516FB005DC8F1 /* FMPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMPlayerViewController.h; sourceTree = "<group>"; };
+		5CB5FF661D4516FB005DC8F1 /* FMPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMPlayerViewController.m; sourceTree = "<group>"; };
+		5CB5FF671D4516FB005DC8F1 /* FMPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMPlayerViewController.xib; sourceTree = "<group>"; };
+		5CB5FF6B1D4518D2005DC8F1 /* FMTrackModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMTrackModel.h; sourceTree = "<group>"; };
+		5CB5FF6C1D4518D2005DC8F1 /* FMTrackModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMTrackModel.m; sourceTree = "<group>"; };
+		5CB5FF6E1D452225005DC8F1 /* FMApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMApplication.h; sourceTree = "<group>"; };
+		5CB5FF6F1D452225005DC8F1 /* FMApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMApplication.m; sourceTree = "<group>"; };
 		5CE73A121D3D15A1000877A1 /* FirstMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE73A161D3D15A1000877A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5CE73A181D3D15A1000877A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -317,9 +326,6 @@
 		5CE73A571D3D23C0000877A1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		FFC3DB5E1D4489F20036658A /* APISoundcCoud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APISoundcCoud.h; path = Api/APISoundcCoud.h; sourceTree = "<group>"; };
 		FFC3DB5F1D4489F20036658A /* APISoundcCoud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APISoundcCoud.m; path = Api/APISoundcCoud.m; sourceTree = "<group>"; };
-		FFC3DB641D448F6C0036658A /* FMPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMPlayerViewController.h; sourceTree = "<group>"; };
-		FFC3DB651D448F6C0036658A /* FMPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMPlayerViewController.m; sourceTree = "<group>"; };
-		FFC3DB661D448F6C0036658A /* FMPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMPlayerViewController.xib; sourceTree = "<group>"; };
 		FFC3DB691D4499FD0036658A /* btn_add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_add@2x.png"; sourceTree = "<group>"; };
 		FFC3DB6B1D449A060036658A /* accesoryDetail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accesoryDetail.png; sourceTree = "<group>"; };
 		FFC3DB6C1D449A060036658A /* accesoryDetail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accesoryDetail@2x.png"; sourceTree = "<group>"; };
@@ -892,6 +898,25 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		5CB5FF641D4516FB005DC8F1 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				5CB5FF651D4516FB005DC8F1 /* FMPlayerViewController.h */,
+				5CB5FF661D4516FB005DC8F1 /* FMPlayerViewController.m */,
+				5CB5FF671D4516FB005DC8F1 /* FMPlayerViewController.xib */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		5CB5FF6A1D4518B0005DC8F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5CB5FF6B1D4518D2005DC8F1 /* FMTrackModel.h */,
+				5CB5FF6C1D4518D2005DC8F1 /* FMTrackModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		5CE73A091D3D15A1000877A1 = {
 			isa = PBXGroup;
 			children = (
@@ -914,6 +939,8 @@
 			children = (
 				5CE73A181D3D15A1000877A1 /* AppDelegate.h */,
 				5CE73A191D3D15A1000877A1 /* AppDelegate.m */,
+				5CB5FF6E1D452225005DC8F1 /* FMApplication.h */,
+				5CB5FF6F1D452225005DC8F1 /* FMApplication.m */,
 				5CE73A211D3D15A1000877A1 /* Assets.xcassets */,
 				5CE73A231D3D15A1000877A1 /* LaunchScreen.storyboard */,
 				5CE73A261D3D15A1000877A1 /* Info.plist */,
@@ -935,7 +962,7 @@
 		5CE73A2C1D3D1905000877A1 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				FFC3DB631D448F530036658A /* Player */,
+				5CB5FF641D4516FB005DC8F1 /* Player */,
 				5CE73A381D3D2115000877A1 /* Commons */,
 				5CE73A3B1D3D2115000877A1 /* Home */,
 			);
@@ -945,6 +972,7 @@
 		5CE73A381D3D2115000877A1 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				5CB5FF6A1D4518B0005DC8F1 /* Model */,
 				FFC3DB5D1D4489E60036658A /* API */,
 				5CE73A391D3D2115000877A1 /* Navigation */,
 				5CE73A3A1D3D2115000877A1 /* Tabbar */,
@@ -1000,16 +1028,6 @@
 				FFC3DB5F1D4489F20036658A /* APISoundcCoud.m */,
 			);
 			name = API;
-			sourceTree = "<group>";
-		};
-		FFC3DB631D448F530036658A /* Player */ = {
-			isa = PBXGroup;
-			children = (
-				FFC3DB641D448F6C0036658A /* FMPlayerViewController.h */,
-				FFC3DB651D448F6C0036658A /* FMPlayerViewController.m */,
-				FFC3DB661D448F6C0036658A /* FMPlayerViewController.xib */,
-			);
-			name = Player;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1110,6 +1128,7 @@
 				FFC3DD231D449A060036658A /* image_ads_3@3x.png in Resources */,
 				FFC3DC961D449A060036658A /* btn_miniplayer_play@2x.png in Resources */,
 				FFC3DC891D449A060036658A /* btn_equalizer_sel.png in Resources */,
+				5CB5FF691D4516FB005DC8F1 /* FMPlayerViewController.xib in Resources */,
 				FFC3DD781D449A060036658A /* tabbar_search@3x.png in Resources */,
 				FFC3DCE31D449A060036658A /* feedback@3x.png in Resources */,
 				FFC3DD501D449A060036658A /* notification_alert@3x.png in Resources */,
@@ -1137,7 +1156,6 @@
 				FFC3DCEF1D449A060036658A /* icon_info.png in Resources */,
 				FFC3DCC91D449A060036658A /* btn_slider.png in Resources */,
 				FFC3DD6E1D449A060036658A /* search_default_bg@3x.png in Resources */,
-				FFC3DB681D448F6C0036658A /* FMPlayerViewController.xib in Resources */,
 				FFC3DCFD1D449A060036658A /* icon_tab_search.png in Resources */,
 				FFC3DD041D449A060036658A /* icon_Tabbar_library@2x.png in Resources */,
 				FFC3DD0F1D449A060036658A /* icon-facebook.png in Resources */,
@@ -1356,10 +1374,12 @@
 			files = (
 				5C5BF7C11D3E887D004338C9 /* NDDTabBarController.m in Sources */,
 				5CE73A1A1D3D15A1000877A1 /* AppDelegate.m in Sources */,
-				FFC3DB671D448F6C0036658A /* FMPlayerViewController.m in Sources */,
+				5CB5FF681D4516FB005DC8F1 /* FMPlayerViewController.m in Sources */,
 				5C6A480F1D43DA0200D39301 /* NDDTabarItem.m in Sources */,
 				FFC3DB601D4489F20036658A /* APISoundcCoud.m in Sources */,
 				5CE73A171D3D15A1000877A1 /* main.m in Sources */,
+				5CB5FF6D1D4518D2005DC8F1 /* FMTrackModel.m in Sources */,
+				5CB5FF701D452225005DC8F1 /* FMApplication.m in Sources */,
 				5CE73A511D3D2251000877A1 /* FMNavigationController.m in Sources */,
 				5CE73A451D3D2115000877A1 /* FMHomeTableViewCell.m in Sources */,
 				5CE73A431D3D2115000877A1 /* FMHomeViewController.m in Sources */,
