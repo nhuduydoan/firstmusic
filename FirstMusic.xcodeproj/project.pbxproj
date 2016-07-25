@@ -7,13 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C5BF7C11D3E887D004338C9 /* NDDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5BF7BF1D3E887D004338C9 /* NDDTabBarController.m */; };
-		5C5BF7C21D3E887D004338C9 /* NDDTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C5BF7C01D3E887D004338C9 /* NDDTabBarController.xib */; };
-		5C6A480F1D43DA0200D39301 /* NDDTabarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6A480E1D43DA0200D39301 /* NDDTabarItem.m */; };
-		5C6A48111D43DACC00D39301 /* NDDTabbarItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C6A48101D43DACC00D39301 /* NDDTabbarItem.xib */; };
 		5CB5FF681D4516FB005DC8F1 /* FMPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB5FF661D4516FB005DC8F1 /* FMPlayerViewController.m */; };
 		5CB5FF691D4516FB005DC8F1 /* FMPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB5FF671D4516FB005DC8F1 /* FMPlayerViewController.xib */; };
-		5CB5FF6D1D4518D2005DC8F1 /* FMTrackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB5FF6C1D4518D2005DC8F1 /* FMTrackModel.m */; };
 		5CB5FF701D452225005DC8F1 /* FMApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB5FF6F1D452225005DC8F1 /* FMApplication.m */; };
 		5CE73A171D3D15A1000877A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE73A161D3D15A1000877A1 /* main.m */; };
 		5CE73A1A1D3D15A1000877A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE73A191D3D15A1000877A1 /* AppDelegate.m */; };
@@ -23,7 +18,18 @@
 		5CE73A441D3D2115000877A1 /* FMHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CE73A3E1D3D2115000877A1 /* FMHomeViewController.xib */; };
 		5CE73A451D3D2115000877A1 /* FMHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE73A411D3D2115000877A1 /* FMHomeTableViewCell.m */; };
 		5CE73A461D3D2115000877A1 /* FMHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CE73A421D3D2115000877A1 /* FMHomeTableViewCell.xib */; };
-		5CE73A511D3D2251000877A1 /* FMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE73A501D3D2251000877A1 /* FMNavigationController.m */; };
+		5CFF3FD01D46595E001D7E6B /* APISoundcCoud.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF3FBE1D46595E001D7E6B /* APISoundcCoud.m */; };
+		5CFF3FD11D46595E001D7E6B /* FMGoogleAds.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF3FC11D46595E001D7E6B /* FMGoogleAds.m */; };
+		5CFF3FD21D46595E001D7E6B /* FMTrackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF3FC41D46595E001D7E6B /* FMTrackModel.m */; };
+		5CFF3FD31D46595E001D7E6B /* FMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF3FC71D46595E001D7E6B /* FMNavigationController.m */; };
+		5CFF3FD41D46595E001D7E6B /* NDDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF3FCA1D46595E001D7E6B /* NDDTabBarController.m */; };
+		5CFF3FD51D46595E001D7E6B /* NDDTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CFF3FCB1D46595E001D7E6B /* NDDTabBarController.xib */; };
+		5CFF3FD61D46595E001D7E6B /* NDDTabarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF3FCD1D46595E001D7E6B /* NDDTabarItem.m */; };
+		5CFF3FD71D46595E001D7E6B /* NDDTabbarItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CFF3FCF1D46595E001D7E6B /* NDDTabbarItem.xib */; };
+		5CFF3FE31D465C77001D7E6B /* FMTracksTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF3FE01D465C77001D7E6B /* FMTracksTableVC.m */; };
+		5CFF3FE41D465C77001D7E6B /* FMTracksTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CFF3FE11D465C77001D7E6B /* FMTracksTableVC.xib */; };
+		5CFF3FE81D465CAA001D7E6B /* FMTrackTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF3FE61D465CAA001D7E6B /* FMTrackTableViewCell.m */; };
+		5CFF3FE91D465CAA001D7E6B /* FMTrackTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CFF3FE71D465CAA001D7E6B /* FMTrackTableViewCell.xib */; };
 		FA5E420343117A0328182EAF /* libPods-FirstMusic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE50B603EC8281B1F731FE2 /* libPods-FirstMusic.a */; };
 		FF07C1C21D4646C500E27222 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF07C1C11D4646C500E27222 /* GoogleService-Info.plist */; };
 		FF3A9EF81D452E7D00696763 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF3A9EF71D452E7D00696763 /* GoogleMobileAds.framework */; };
@@ -33,8 +39,6 @@
 		FF3A9F081D452F5B00696763 /* FMSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF3A9F001D452F5B00696763 /* FMSearchViewController.xib */; };
 		FF3A9F091D452F5B00696763 /* FMSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3A9F031D452F5B00696763 /* FMSettingViewController.m */; };
 		FF3A9F0A1D452F5B00696763 /* FMSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF3A9F041D452F5B00696763 /* FMSettingViewController.xib */; };
-		FF3A9F0E1D452F6800696763 /* FMGoogleAds.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3A9F0D1D452F6800696763 /* FMGoogleAds.m */; };
-		FFC3DB601D4489F20036658A /* APISoundcCoud.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC3DB5F1D4489F20036658A /* APISoundcCoud.m */; };
 		FFC3DB6A1D4499FD0036658A /* btn_add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFC3DB691D4499FD0036658A /* btn_add@2x.png */; };
 		FFC3DC751D449A060036658A /* accesoryDetail.png in Resources */ = {isa = PBXBuildFile; fileRef = FFC3DB6B1D449A060036658A /* accesoryDetail.png */; };
 		FFC3DC761D449A060036658A /* accesoryDetail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFC3DB6C1D449A060036658A /* accesoryDetail@2x.png */; };
@@ -305,17 +309,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5C5BF7BE1D3E887D004338C9 /* NDDTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDDTabBarController.h; sourceTree = "<group>"; };
-		5C5BF7BF1D3E887D004338C9 /* NDDTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDDTabBarController.m; sourceTree = "<group>"; };
-		5C5BF7C01D3E887D004338C9 /* NDDTabBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NDDTabBarController.xib; sourceTree = "<group>"; };
-		5C6A480D1D43DA0200D39301 /* NDDTabbarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDDTabbarItem.h; sourceTree = "<group>"; };
-		5C6A480E1D43DA0200D39301 /* NDDTabarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDDTabarItem.m; sourceTree = "<group>"; };
-		5C6A48101D43DACC00D39301 /* NDDTabbarItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NDDTabbarItem.xib; sourceTree = "<group>"; };
 		5CB5FF651D4516FB005DC8F1 /* FMPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMPlayerViewController.h; sourceTree = "<group>"; };
 		5CB5FF661D4516FB005DC8F1 /* FMPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMPlayerViewController.m; sourceTree = "<group>"; };
 		5CB5FF671D4516FB005DC8F1 /* FMPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMPlayerViewController.xib; sourceTree = "<group>"; };
-		5CB5FF6B1D4518D2005DC8F1 /* FMTrackModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMTrackModel.h; sourceTree = "<group>"; };
-		5CB5FF6C1D4518D2005DC8F1 /* FMTrackModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMTrackModel.m; sourceTree = "<group>"; };
 		5CB5FF6E1D452225005DC8F1 /* FMApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMApplication.h; sourceTree = "<group>"; };
 		5CB5FF6F1D452225005DC8F1 /* FMApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMApplication.m; sourceTree = "<group>"; };
 		5CE73A121D3D15A1000877A1 /* FirstMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -331,9 +327,27 @@
 		5CE73A401D3D2115000877A1 /* FMHomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMHomeTableViewCell.h; sourceTree = "<group>"; };
 		5CE73A411D3D2115000877A1 /* FMHomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMHomeTableViewCell.m; sourceTree = "<group>"; };
 		5CE73A421D3D2115000877A1 /* FMHomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMHomeTableViewCell.xib; sourceTree = "<group>"; };
-		5CE73A4F1D3D2251000877A1 /* FMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMNavigationController.h; sourceTree = "<group>"; };
-		5CE73A501D3D2251000877A1 /* FMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMNavigationController.m; sourceTree = "<group>"; };
 		5CE73A571D3D23C0000877A1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		5CFF3FBD1D46595E001D7E6B /* APISoundcCoud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APISoundcCoud.h; sourceTree = "<group>"; };
+		5CFF3FBE1D46595E001D7E6B /* APISoundcCoud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APISoundcCoud.m; sourceTree = "<group>"; };
+		5CFF3FC01D46595E001D7E6B /* FMGoogleAds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMGoogleAds.h; sourceTree = "<group>"; };
+		5CFF3FC11D46595E001D7E6B /* FMGoogleAds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMGoogleAds.m; sourceTree = "<group>"; };
+		5CFF3FC31D46595E001D7E6B /* FMTrackModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMTrackModel.h; sourceTree = "<group>"; };
+		5CFF3FC41D46595E001D7E6B /* FMTrackModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMTrackModel.m; sourceTree = "<group>"; };
+		5CFF3FC61D46595E001D7E6B /* FMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMNavigationController.h; sourceTree = "<group>"; };
+		5CFF3FC71D46595E001D7E6B /* FMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMNavigationController.m; sourceTree = "<group>"; };
+		5CFF3FC91D46595E001D7E6B /* NDDTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDDTabBarController.h; sourceTree = "<group>"; };
+		5CFF3FCA1D46595E001D7E6B /* NDDTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDDTabBarController.m; sourceTree = "<group>"; };
+		5CFF3FCB1D46595E001D7E6B /* NDDTabBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NDDTabBarController.xib; sourceTree = "<group>"; };
+		5CFF3FCD1D46595E001D7E6B /* NDDTabarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDDTabarItem.m; sourceTree = "<group>"; };
+		5CFF3FCE1D46595E001D7E6B /* NDDTabbarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDDTabbarItem.h; sourceTree = "<group>"; };
+		5CFF3FCF1D46595E001D7E6B /* NDDTabbarItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NDDTabbarItem.xib; sourceTree = "<group>"; };
+		5CFF3FDF1D465C77001D7E6B /* FMTracksTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMTracksTableVC.h; sourceTree = "<group>"; };
+		5CFF3FE01D465C77001D7E6B /* FMTracksTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMTracksTableVC.m; sourceTree = "<group>"; };
+		5CFF3FE11D465C77001D7E6B /* FMTracksTableVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMTracksTableVC.xib; sourceTree = "<group>"; };
+		5CFF3FE51D465CAA001D7E6B /* FMTrackTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMTrackTableViewCell.h; sourceTree = "<group>"; };
+		5CFF3FE61D465CAA001D7E6B /* FMTrackTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMTrackTableViewCell.m; sourceTree = "<group>"; };
+		5CFF3FE71D465CAA001D7E6B /* FMTrackTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMTrackTableViewCell.xib; sourceTree = "<group>"; };
 		6EE50B603EC8281B1F731FE2 /* libPods-FirstMusic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirstMusic.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEAEFFA44C5939CA81FFF431 /* Pods-FirstMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstMusic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirstMusic/Pods-FirstMusic.debug.xcconfig"; sourceTree = "<group>"; };
 		F3C26FB5E0F3EF239D88278B /* Pods-FirstMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstMusic.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirstMusic/Pods-FirstMusic.release.xcconfig"; sourceTree = "<group>"; };
@@ -348,10 +362,6 @@
 		FF3A9F021D452F5B00696763 /* FMSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMSettingViewController.h; sourceTree = "<group>"; };
 		FF3A9F031D452F5B00696763 /* FMSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMSettingViewController.m; sourceTree = "<group>"; };
 		FF3A9F041D452F5B00696763 /* FMSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMSettingViewController.xib; sourceTree = "<group>"; };
-		FF3A9F0C1D452F6800696763 /* FMGoogleAds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMGoogleAds.h; sourceTree = "<group>"; };
-		FF3A9F0D1D452F6800696763 /* FMGoogleAds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMGoogleAds.m; sourceTree = "<group>"; };
-		FFC3DB5E1D4489F20036658A /* APISoundcCoud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APISoundcCoud.h; path = Api/APISoundcCoud.h; sourceTree = "<group>"; };
-		FFC3DB5F1D4489F20036658A /* APISoundcCoud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APISoundcCoud.m; path = Api/APISoundcCoud.m; sourceTree = "<group>"; };
 		FFC3DB691D4499FD0036658A /* btn_add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_add@2x.png"; sourceTree = "<group>"; };
 		FFC3DB6B1D449A060036658A /* accesoryDetail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accesoryDetail.png; sourceTree = "<group>"; };
 		FFC3DB6C1D449A060036658A /* accesoryDetail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accesoryDetail@2x.png"; sourceTree = "<group>"; };
@@ -641,16 +651,6 @@
 				F3C26FB5E0F3EF239D88278B /* Pods-FirstMusic.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		5C5BF7C31D3E8933004338C9 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				5C6A480D1D43DA0200D39301 /* NDDTabbarItem.h */,
-				5C6A480E1D43DA0200D39301 /* NDDTabarItem.m */,
-				5C6A48101D43DACC00D39301 /* NDDTabbarItem.xib */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		5C6A48121D43DFA500D39301 /* Resouces */ = {
@@ -945,15 +945,6 @@
 			path = Player;
 			sourceTree = "<group>";
 		};
-		5CB5FF6A1D4518B0005DC8F1 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				5CB5FF6B1D4518D2005DC8F1 /* FMTrackModel.h */,
-				5CB5FF6C1D4518D2005DC8F1 /* FMTrackModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		5CE73A091D3D15A1000877A1 = {
 			isa = PBXGroup;
 			children = (
@@ -985,6 +976,7 @@
 				5CE73A211D3D15A1000877A1 /* Assets.xcassets */,
 				5CE73A231D3D15A1000877A1 /* LaunchScreen.storyboard */,
 				5CE73A261D3D15A1000877A1 /* Info.plist */,
+				5CFF3FBB1D46595E001D7E6B /* Commons */,
 				5C6A48121D43DFA500D39301 /* Resouces */,
 				5CE73A2C1D3D1905000877A1 /* Screens */,
 				5CE73A151D3D15A1000877A1 /* Supporting Files */,
@@ -1003,46 +995,14 @@
 		5CE73A2C1D3D1905000877A1 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				5CFF3FD81D465967001D7E6B /* Commons */,
 				FF3A9EF91D452F5B00696763 /* MyPlayList */,
 				FF3A9EFD1D452F5B00696763 /* Search */,
 				FF3A9F011D452F5B00696763 /* Setting */,
 				5CB5FF641D4516FB005DC8F1 /* Player */,
-				5CE73A381D3D2115000877A1 /* Commons */,
 				5CE73A3B1D3D2115000877A1 /* Home */,
 			);
 			path = Screens;
-			sourceTree = "<group>";
-		};
-		5CE73A381D3D2115000877A1 /* Commons */ = {
-			isa = PBXGroup;
-			children = (
-				FF3A9F0B1D452F6800696763 /* GoogleManager */,
-				5CB5FF6A1D4518B0005DC8F1 /* Model */,
-				FFC3DB5D1D4489E60036658A /* API */,
-				5CE73A391D3D2115000877A1 /* Navigation */,
-				5CE73A3A1D3D2115000877A1 /* Tabbar */,
-			);
-			path = Commons;
-			sourceTree = "<group>";
-		};
-		5CE73A391D3D2115000877A1 /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				5CE73A4F1D3D2251000877A1 /* FMNavigationController.h */,
-				5CE73A501D3D2251000877A1 /* FMNavigationController.m */,
-			);
-			path = Navigation;
-			sourceTree = "<group>";
-		};
-		5CE73A3A1D3D2115000877A1 /* Tabbar */ = {
-			isa = PBXGroup;
-			children = (
-				5C5BF7BE1D3E887D004338C9 /* NDDTabBarController.h */,
-				5C5BF7BF1D3E887D004338C9 /* NDDTabBarController.m */,
-				5C5BF7C01D3E887D004338C9 /* NDDTabBarController.xib */,
-				5C5BF7C31D3E8933004338C9 /* View */,
-			);
-			path = Tabbar;
 			sourceTree = "<group>";
 		};
 		5CE73A3B1D3D2115000877A1 /* Home */ = {
@@ -1062,6 +1022,104 @@
 				5CE73A401D3D2115000877A1 /* FMHomeTableViewCell.h */,
 				5CE73A411D3D2115000877A1 /* FMHomeTableViewCell.m */,
 				5CE73A421D3D2115000877A1 /* FMHomeTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5CFF3FBB1D46595E001D7E6B /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				5CFF3FBC1D46595E001D7E6B /* Api */,
+				5CFF3FBF1D46595E001D7E6B /* GoogleManager */,
+				5CFF3FC21D46595E001D7E6B /* Model */,
+				5CFF3FC51D46595E001D7E6B /* Navigation */,
+				5CFF3FC81D46595E001D7E6B /* Tabbar */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		5CFF3FBC1D46595E001D7E6B /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				5CFF3FBD1D46595E001D7E6B /* APISoundcCoud.h */,
+				5CFF3FBE1D46595E001D7E6B /* APISoundcCoud.m */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		5CFF3FBF1D46595E001D7E6B /* GoogleManager */ = {
+			isa = PBXGroup;
+			children = (
+				5CFF3FC01D46595E001D7E6B /* FMGoogleAds.h */,
+				5CFF3FC11D46595E001D7E6B /* FMGoogleAds.m */,
+			);
+			path = GoogleManager;
+			sourceTree = "<group>";
+		};
+		5CFF3FC21D46595E001D7E6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5CFF3FC31D46595E001D7E6B /* FMTrackModel.h */,
+				5CFF3FC41D46595E001D7E6B /* FMTrackModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5CFF3FC51D46595E001D7E6B /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				5CFF3FC61D46595E001D7E6B /* FMNavigationController.h */,
+				5CFF3FC71D46595E001D7E6B /* FMNavigationController.m */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		5CFF3FC81D46595E001D7E6B /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				5CFF3FC91D46595E001D7E6B /* NDDTabBarController.h */,
+				5CFF3FCA1D46595E001D7E6B /* NDDTabBarController.m */,
+				5CFF3FCB1D46595E001D7E6B /* NDDTabBarController.xib */,
+				5CFF3FCC1D46595E001D7E6B /* View */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		5CFF3FCC1D46595E001D7E6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5CFF3FCD1D46595E001D7E6B /* NDDTabarItem.m */,
+				5CFF3FCE1D46595E001D7E6B /* NDDTabbarItem.h */,
+				5CFF3FCF1D46595E001D7E6B /* NDDTabbarItem.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5CFF3FD81D465967001D7E6B /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				5CFF3FDE1D465C77001D7E6B /* TrackTableVC */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		5CFF3FDE1D465C77001D7E6B /* TrackTableVC */ = {
+			isa = PBXGroup;
+			children = (
+				5CFF3FDF1D465C77001D7E6B /* FMTracksTableVC.h */,
+				5CFF3FE01D465C77001D7E6B /* FMTracksTableVC.m */,
+				5CFF3FE11D465C77001D7E6B /* FMTracksTableVC.xib */,
+				5CFF3FE21D465C77001D7E6B /* View */,
+			);
+			path = TrackTableVC;
+			sourceTree = "<group>";
+		};
+		5CFF3FE21D465C77001D7E6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5CFF3FE51D465CAA001D7E6B /* FMTrackTableViewCell.h */,
+				5CFF3FE61D465CAA001D7E6B /* FMTrackTableViewCell.m */,
+				5CFF3FE71D465CAA001D7E6B /* FMTrackTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1105,24 +1163,6 @@
 			);
 			name = Setting;
 			path = Player/Setting;
-			sourceTree = "<group>";
-		};
-		FF3A9F0B1D452F6800696763 /* GoogleManager */ = {
-			isa = PBXGroup;
-			children = (
-				FF3A9F0C1D452F6800696763 /* FMGoogleAds.h */,
-				FF3A9F0D1D452F6800696763 /* FMGoogleAds.m */,
-			);
-			path = GoogleManager;
-			sourceTree = "<group>";
-		};
-		FFC3DB5D1D4489E60036658A /* API */ = {
-			isa = PBXGroup;
-			children = (
-				FFC3DB5E1D4489F20036658A /* APISoundcCoud.h */,
-				FFC3DB5F1D4489F20036658A /* APISoundcCoud.m */,
-			);
-			name = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1221,6 +1261,7 @@
 				FFC3DCCA1D449A060036658A /* btn_slider@2x.png in Resources */,
 				FFC3DD721D449A060036658A /* setting_left.png in Resources */,
 				5CE73A221D3D15A1000877A1 /* Assets.xcassets in Resources */,
+				5CFF3FD51D46595E001D7E6B /* NDDTabBarController.xib in Resources */,
 				FFC3DCD31D449A060036658A /* check_mark_actionsheet@2x.png in Resources */,
 				FFC3DC981D449A060036658A /* btn_more_player@2x.png in Resources */,
 				FFC3DD231D449A060036658A /* image_ads_3@3x.png in Resources */,
@@ -1244,6 +1285,7 @@
 				FFC3DCAE1D449A060036658A /* btn_player_list@3x.png in Resources */,
 				FFC3DD1A1D449A060036658A /* iconAction@3x.png in Resources */,
 				FFC3DD271D449A060036658A /* LaunchImage-700-568h@2x.png in Resources */,
+				5CFF3FD71D46595E001D7E6B /* NDDTabbarItem.xib in Resources */,
 				FFC3DD291D449A060036658A /* LaunchImage-700-Portrait~ipad.png in Resources */,
 				FFC3DD341D449A060036658A /* LockScreen@2x.png in Resources */,
 				FFC3DCAA1D449A060036658A /* btn_play@2x.png in Resources */,
@@ -1292,6 +1334,7 @@
 				FFC3DC9C1D449A060036658A /* btn_more@3x.png in Resources */,
 				FFC3DC7E1D449A060036658A /* btn_add_player.png in Resources */,
 				FFC3DCBA1D449A060036658A /* btn_repeat_none@3x.png in Resources */,
+				5CFF3FE91D465CAA001D7E6B /* FMTrackTableViewCell.xib in Resources */,
 				FFC3DD181D449A060036658A /* iconAction.png in Resources */,
 				FFC3DD2E1D449A060036658A /* library@2x.png in Resources */,
 				FFC3DD371D449A060036658A /* more_new@2x.png in Resources */,
@@ -1329,6 +1372,7 @@
 				FFC3DD571D449A060036658A /* playlist_ distinguish.png in Resources */,
 				FFC3DCFE1D449A060036658A /* icon_tab_search@2x.png in Resources */,
 				FFC3DCDD1D449A060036658A /* eqdownarrow.png in Resources */,
+				5CFF3FE41D465C77001D7E6B /* FMTracksTableVC.xib in Resources */,
 				FFC3DD3B1D449A060036658A /* MPCloseBtn@3x.png in Resources */,
 				FFC3DD241D449A060036658A /* image_ads_close.png in Resources */,
 				FFC3DD7D1D449A060036658A /* track_noimg@2x.png in Resources */,
@@ -1393,7 +1437,6 @@
 				FFC3DCA41D449A060036658A /* btn_next@2x.png in Resources */,
 				FFC3DD021D449A060036658A /* icon_Tabbar_home@3x.png in Resources */,
 				FFC3DCC11D449A060036658A /* btn_share@2x.png in Resources */,
-				5C6A48111D43DACC00D39301 /* NDDTabbarItem.xib in Resources */,
 				FFC3DCD21D449A060036658A /* check_mark_actionsheet.png in Resources */,
 				FFC3DD311D449A060036658A /* loading@2x.png in Resources */,
 				FFC3DCAF1D449A060036658A /* btn_previous.png in Resources */,
@@ -1439,7 +1482,6 @@
 				FFC3DCE01D449A060036658A /* exit.png in Resources */,
 				FFC3DD3C1D449A060036658A /* MPCloseButtonX.png in Resources */,
 				FFC3DCC31D449A060036658A /* btn_shuffle_off.png in Resources */,
-				5C5BF7C21D3E887D004338C9 /* NDDTabBarController.xib in Resources */,
 				FFC3DCB61D449A060036658A /* btn_repeat_all@2x.png in Resources */,
 				FFC3DC751D449A060036658A /* accesoryDetail.png in Resources */,
 				FFC3DD031D449A060036658A /* icon_Tabbar_library.png in Resources */,
@@ -1522,20 +1564,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C5BF7C11D3E887D004338C9 /* NDDTabBarController.m in Sources */,
 				FF3A9F051D452F5B00696763 /* FMMyPlayListViewController.m in Sources */,
+				5CFF3FD01D46595E001D7E6B /* APISoundcCoud.m in Sources */,
+				5CFF3FE81D465CAA001D7E6B /* FMTrackTableViewCell.m in Sources */,
+				5CFF3FD21D46595E001D7E6B /* FMTrackModel.m in Sources */,
+				5CFF3FD11D46595E001D7E6B /* FMGoogleAds.m in Sources */,
 				5CE73A1A1D3D15A1000877A1 /* AppDelegate.m in Sources */,
 				5CB5FF681D4516FB005DC8F1 /* FMPlayerViewController.m in Sources */,
-				5C6A480F1D43DA0200D39301 /* NDDTabarItem.m in Sources */,
 				FF3A9F071D452F5B00696763 /* FMSearchViewController.m in Sources */,
 				FF3A9F091D452F5B00696763 /* FMSettingViewController.m in Sources */,
-				FFC3DB601D4489F20036658A /* APISoundcCoud.m in Sources */,
-				FF3A9F0E1D452F6800696763 /* FMGoogleAds.m in Sources */,
+				5CFF3FE31D465C77001D7E6B /* FMTracksTableVC.m in Sources */,
 				5CE73A171D3D15A1000877A1 /* main.m in Sources */,
-				5CB5FF6D1D4518D2005DC8F1 /* FMTrackModel.m in Sources */,
+				5CFF3FD61D46595E001D7E6B /* NDDTabarItem.m in Sources */,
+				5CFF3FD31D46595E001D7E6B /* FMNavigationController.m in Sources */,
 				5CB5FF701D452225005DC8F1 /* FMApplication.m in Sources */,
-				5CE73A511D3D2251000877A1 /* FMNavigationController.m in Sources */,
 				5CE73A451D3D2115000877A1 /* FMHomeTableViewCell.m in Sources */,
+				5CFF3FD41D46595E001D7E6B /* NDDTabBarController.m in Sources */,
 				5CE73A431D3D2115000877A1 /* FMHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
