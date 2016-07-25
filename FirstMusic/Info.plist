@@ -39,5 +39,14 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>App Encryption Export Compliance Code</key>
+		<true/>
+		<key>App Uses Non-Exempt Encryption</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

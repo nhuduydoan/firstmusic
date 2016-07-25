@@ -24,6 +24,16 @@
 		5CE73A451D3D2115000877A1 /* FMHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE73A411D3D2115000877A1 /* FMHomeTableViewCell.m */; };
 		5CE73A461D3D2115000877A1 /* FMHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CE73A421D3D2115000877A1 /* FMHomeTableViewCell.xib */; };
 		5CE73A511D3D2251000877A1 /* FMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE73A501D3D2251000877A1 /* FMNavigationController.m */; };
+		FA5E420343117A0328182EAF /* libPods-FirstMusic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE50B603EC8281B1F731FE2 /* libPods-FirstMusic.a */; };
+		FF07C1C21D4646C500E27222 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF07C1C11D4646C500E27222 /* GoogleService-Info.plist */; };
+		FF3A9EF81D452E7D00696763 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF3A9EF71D452E7D00696763 /* GoogleMobileAds.framework */; };
+		FF3A9F051D452F5B00696763 /* FMMyPlayListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3A9EFB1D452F5B00696763 /* FMMyPlayListViewController.m */; };
+		FF3A9F061D452F5B00696763 /* FMMyPlayListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF3A9EFC1D452F5B00696763 /* FMMyPlayListViewController.xib */; };
+		FF3A9F071D452F5B00696763 /* FMSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3A9EFF1D452F5B00696763 /* FMSearchViewController.m */; };
+		FF3A9F081D452F5B00696763 /* FMSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF3A9F001D452F5B00696763 /* FMSearchViewController.xib */; };
+		FF3A9F091D452F5B00696763 /* FMSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3A9F031D452F5B00696763 /* FMSettingViewController.m */; };
+		FF3A9F0A1D452F5B00696763 /* FMSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF3A9F041D452F5B00696763 /* FMSettingViewController.xib */; };
+		FF3A9F0E1D452F6800696763 /* FMGoogleAds.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3A9F0D1D452F6800696763 /* FMGoogleAds.m */; };
 		FFC3DB601D4489F20036658A /* APISoundcCoud.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC3DB5F1D4489F20036658A /* APISoundcCoud.m */; };
 		FFC3DB6A1D4499FD0036658A /* btn_add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFC3DB691D4499FD0036658A /* btn_add@2x.png */; };
 		FFC3DC751D449A060036658A /* accesoryDetail.png in Resources */ = {isa = PBXBuildFile; fileRef = FFC3DB6B1D449A060036658A /* accesoryDetail.png */; };
@@ -324,6 +334,22 @@
 		5CE73A4F1D3D2251000877A1 /* FMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMNavigationController.h; sourceTree = "<group>"; };
 		5CE73A501D3D2251000877A1 /* FMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMNavigationController.m; sourceTree = "<group>"; };
 		5CE73A571D3D23C0000877A1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		6EE50B603EC8281B1F731FE2 /* libPods-FirstMusic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirstMusic.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEAEFFA44C5939CA81FFF431 /* Pods-FirstMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstMusic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirstMusic/Pods-FirstMusic.debug.xcconfig"; sourceTree = "<group>"; };
+		F3C26FB5E0F3EF239D88278B /* Pods-FirstMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstMusic.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirstMusic/Pods-FirstMusic.release.xcconfig"; sourceTree = "<group>"; };
+		FF07C1C11D4646C500E27222 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "FirstMusic/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FF3A9EF71D452E7D00696763 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "GoogleMobileAdsSdkiOS-7.9.1/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		FF3A9EFA1D452F5B00696763 /* FMMyPlayListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMMyPlayListViewController.h; sourceTree = "<group>"; };
+		FF3A9EFB1D452F5B00696763 /* FMMyPlayListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMMyPlayListViewController.m; sourceTree = "<group>"; };
+		FF3A9EFC1D452F5B00696763 /* FMMyPlayListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMMyPlayListViewController.xib; sourceTree = "<group>"; };
+		FF3A9EFE1D452F5B00696763 /* FMSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMSearchViewController.h; sourceTree = "<group>"; };
+		FF3A9EFF1D452F5B00696763 /* FMSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMSearchViewController.m; sourceTree = "<group>"; };
+		FF3A9F001D452F5B00696763 /* FMSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMSearchViewController.xib; sourceTree = "<group>"; };
+		FF3A9F021D452F5B00696763 /* FMSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMSettingViewController.h; sourceTree = "<group>"; };
+		FF3A9F031D452F5B00696763 /* FMSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMSettingViewController.m; sourceTree = "<group>"; };
+		FF3A9F041D452F5B00696763 /* FMSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMSettingViewController.xib; sourceTree = "<group>"; };
+		FF3A9F0C1D452F6800696763 /* FMGoogleAds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMGoogleAds.h; sourceTree = "<group>"; };
+		FF3A9F0D1D452F6800696763 /* FMGoogleAds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMGoogleAds.m; sourceTree = "<group>"; };
 		FFC3DB5E1D4489F20036658A /* APISoundcCoud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APISoundcCoud.h; path = Api/APISoundcCoud.h; sourceTree = "<group>"; };
 		FFC3DB5F1D4489F20036658A /* APISoundcCoud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APISoundcCoud.m; path = Api/APISoundcCoud.m; sourceTree = "<group>"; };
 		FFC3DB691D4499FD0036658A /* btn_add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_add@2x.png"; sourceTree = "<group>"; };
@@ -600,12 +626,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF3A9EF81D452E7D00696763 /* GoogleMobileAds.framework in Frameworks */,
+				FA5E420343117A0328182EAF /* libPods-FirstMusic.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		240F99DFDC578546FB373329 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EEAEFFA44C5939CA81FFF431 /* Pods-FirstMusic.debug.xcconfig */,
+				F3C26FB5E0F3EF239D88278B /* Pods-FirstMusic.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5C5BF7C31D3E8933004338C9 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -920,9 +957,13 @@
 		5CE73A091D3D15A1000877A1 = {
 			isa = PBXGroup;
 			children = (
+				FF07C1C11D4646C500E27222 /* GoogleService-Info.plist */,
+				FF3A9EF71D452E7D00696763 /* GoogleMobileAds.framework */,
 				5CE73A571D3D23C0000877A1 /* PrefixHeader.pch */,
 				5CE73A141D3D15A1000877A1 /* FirstMusic */,
 				5CE73A131D3D15A1000877A1 /* Products */,
+				240F99DFDC578546FB373329 /* Pods */,
+				872A0C2DB9929DA01185729E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -962,6 +1003,9 @@
 		5CE73A2C1D3D1905000877A1 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				FF3A9EF91D452F5B00696763 /* MyPlayList */,
+				FF3A9EFD1D452F5B00696763 /* Search */,
+				FF3A9F011D452F5B00696763 /* Setting */,
 				5CB5FF641D4516FB005DC8F1 /* Player */,
 				5CE73A381D3D2115000877A1 /* Commons */,
 				5CE73A3B1D3D2115000877A1 /* Home */,
@@ -972,6 +1016,7 @@
 		5CE73A381D3D2115000877A1 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				FF3A9F0B1D452F6800696763 /* GoogleManager */,
 				5CB5FF6A1D4518B0005DC8F1 /* Model */,
 				FFC3DB5D1D4489E60036658A /* API */,
 				5CE73A391D3D2115000877A1 /* Navigation */,
@@ -1021,6 +1066,56 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		872A0C2DB9929DA01185729E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EE50B603EC8281B1F731FE2 /* libPods-FirstMusic.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF3A9EF91D452F5B00696763 /* MyPlayList */ = {
+			isa = PBXGroup;
+			children = (
+				FF3A9EFA1D452F5B00696763 /* FMMyPlayListViewController.h */,
+				FF3A9EFB1D452F5B00696763 /* FMMyPlayListViewController.m */,
+				FF3A9EFC1D452F5B00696763 /* FMMyPlayListViewController.xib */,
+			);
+			name = MyPlayList;
+			path = Player/MyPlayList;
+			sourceTree = "<group>";
+		};
+		FF3A9EFD1D452F5B00696763 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				FF3A9EFE1D452F5B00696763 /* FMSearchViewController.h */,
+				FF3A9EFF1D452F5B00696763 /* FMSearchViewController.m */,
+				FF3A9F001D452F5B00696763 /* FMSearchViewController.xib */,
+			);
+			name = Search;
+			path = Player/Search;
+			sourceTree = "<group>";
+		};
+		FF3A9F011D452F5B00696763 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				FF3A9F021D452F5B00696763 /* FMSettingViewController.h */,
+				FF3A9F031D452F5B00696763 /* FMSettingViewController.m */,
+				FF3A9F041D452F5B00696763 /* FMSettingViewController.xib */,
+			);
+			name = Setting;
+			path = Player/Setting;
+			sourceTree = "<group>";
+		};
+		FF3A9F0B1D452F6800696763 /* GoogleManager */ = {
+			isa = PBXGroup;
+			children = (
+				FF3A9F0C1D452F6800696763 /* FMGoogleAds.h */,
+				FF3A9F0D1D452F6800696763 /* FMGoogleAds.m */,
+			);
+			path = GoogleManager;
+			sourceTree = "<group>";
+		};
 		FFC3DB5D1D4489E60036658A /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -1037,9 +1132,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5CE73A291D3D15A1000877A1 /* Build configuration list for PBXNativeTarget "FirstMusic" */;
 			buildPhases = (
+				544C2C8E122ADFD6BC176601 /* [CP] Check Pods Manifest.lock */,
 				5CE73A0E1D3D15A1000877A1 /* Sources */,
 				5CE73A0F1D3D15A1000877A1 /* Frameworks */,
 				5CE73A101D3D15A1000877A1 /* Resources */,
+				01D94E6951F610CAA39F3747 /* [CP] Embed Pods Frameworks */,
+				DAB5C5396F3816EFDB55C4A8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1165,6 +1263,7 @@
 				FFC3DCC61D449A060036658A /* btn_shuffle_on.png in Resources */,
 				FFC3DD711D449A060036658A /* Setting_btn_music_effect@3x.png in Resources */,
 				FFC3DD121D449A060036658A /* icon-twitter.png in Resources */,
+				FF07C1C21D4646C500E27222 /* GoogleService-Info.plist in Resources */,
 				FFC3DCC21D449A060036658A /* btn_share@3x.png in Resources */,
 				FFC3DD551D449A060036658A /* playing_mask@2x.png in Resources */,
 				FFC3DCD61D449A060036658A /* editingicon@2x.png in Resources */,
@@ -1216,6 +1315,7 @@
 				FFC3DD171D449A060036658A /* icon-xx@3x.png in Resources */,
 				FFC3DCD01D449A060036658A /* btn_timer@2x.png in Resources */,
 				FFC3DCB91D449A060036658A /* btn_repeat_none@2x.png in Resources */,
+				FF3A9F061D452F5B00696763 /* FMMyPlayListViewController.xib in Resources */,
 				FFC3DC9E1D449A060036658A /* btn_music_effect_sel@2x.png in Resources */,
 				FFC3DCDC1D449A060036658A /* eq_turn_on@3x.png in Resources */,
 				FFC3DCCD1D449A060036658A /* btn_StreamingQuality@2x.png in Resources */,
@@ -1267,6 +1367,7 @@
 				FFC3DD7B1D449A060036658A /* three_line@3x.png in Resources */,
 				FFC3DC951D449A060036658A /* btn_miniplayer_play.png in Resources */,
 				FFC3DD261D449A060036658A /* image_ads_close@3x.png in Resources */,
+				FF3A9F0A1D452F5B00696763 /* FMSettingViewController.xib in Resources */,
 				FFC3DCE51D449A060036658A /* home@2x.png in Resources */,
 				FFC3DCA31D449A060036658A /* btn_next.png in Resources */,
 				FFC3DCEC1D449A060036658A /* icon_checked.png in Resources */,
@@ -1286,6 +1387,7 @@
 				FFC3DC831D449A060036658A /* btn_adjust_brightness.png in Resources */,
 				FFC3DCD51D449A060036658A /* editingicon.png in Resources */,
 				FFC3DD4D1D449A060036658A /* music_note@3x.png in Resources */,
+				FF3A9F081D452F5B00696763 /* FMSearchViewController.xib in Resources */,
 				FFC3DCF91D449A060036658A /* icon_search_right@3x.png in Resources */,
 				FFC3DCF41D449A060036658A /* icon_more_option@3x.png in Resources */,
 				FFC3DCA41D449A060036658A /* btn_next@2x.png in Resources */,
@@ -1367,16 +1469,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01D94E6951F610CAA39F3747 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirstMusic/Pods-FirstMusic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		544C2C8E122ADFD6BC176601 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DAB5C5396F3816EFDB55C4A8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirstMusic/Pods-FirstMusic-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5CE73A0E1D3D15A1000877A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5C5BF7C11D3E887D004338C9 /* NDDTabBarController.m in Sources */,
+				FF3A9F051D452F5B00696763 /* FMMyPlayListViewController.m in Sources */,
 				5CE73A1A1D3D15A1000877A1 /* AppDelegate.m in Sources */,
 				5CB5FF681D4516FB005DC8F1 /* FMPlayerViewController.m in Sources */,
 				5C6A480F1D43DA0200D39301 /* NDDTabarItem.m in Sources */,
+				FF3A9F071D452F5B00696763 /* FMSearchViewController.m in Sources */,
+				FF3A9F091D452F5B00696763 /* FMSettingViewController.m in Sources */,
 				FFC3DB601D4489F20036658A /* APISoundcCoud.m in Sources */,
+				FF3A9F0E1D452F6800696763 /* FMGoogleAds.m in Sources */,
 				5CE73A171D3D15A1000877A1 /* main.m in Sources */,
 				5CB5FF6D1D4518D2005DC8F1 /* FMTrackModel.m in Sources */,
 				5CB5FF701D452225005DC8F1 /* FMApplication.m in Sources */,
@@ -1490,9 +1644,14 @@
 		};
 		5CE73A2A1D3D15A1000877A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEAEFFA44C5939CA81FFF431 /* Pods-FirstMusic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-7.9.1",
+				);
 				INFOPLIST_FILE = FirstMusic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1503,9 +1662,14 @@
 		};
 		5CE73A2B1D3D15A1000877A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3C26FB5E0F3EF239D88278B /* Pods-FirstMusic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-7.9.1",
+				);
 				INFOPLIST_FILE = FirstMusic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

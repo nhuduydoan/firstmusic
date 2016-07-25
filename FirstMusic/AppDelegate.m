@@ -10,7 +10,7 @@
 #import "FMHomeViewController.h"
 #import "NDDTabBarController.h"
 #import "FMNavigationController.h"
-
+@import Firebase;
 @interface AppDelegate ()
 
 @end
@@ -20,7 +20,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
+    [FIRApp configure];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     NDDTabBarController *tabbar = [[NDDTabBarController alloc] init];
     tabbar.viewControllers = [self listViews];

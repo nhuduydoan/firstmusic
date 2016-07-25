@@ -8,6 +8,7 @@
 
 #import "NDDTabBarController.h"
 #import "NDDTabbarItem.h"
+#import "FMGoogleAds.h"
 
 #if kEMUsingTabBar
 #import <UIViewController+ECSlidingViewController.h>
@@ -231,7 +232,14 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hideTabbar) name:@"HideTabBar" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showTabBar) name:@"ShowTabBar" object:nil];
-    
+    if (!_isProVersion) {
+        
+        UIView *bannerAds = [[FMGoogleAds shareInstance] loadBannerAds];
+        CGRect f = self.adsBanner.frame;
+        f.size.height = bannerAds.frame.size.height;
+        self.adsBanner.frame = f;
+        [self.adsBanner addSubview:bannerAds];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
