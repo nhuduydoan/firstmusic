@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>iTunesTop100</key>
+	<dict>
+		<key>name</key>
+		<string>iTunes Top 100</string>
+		<key>id</key>
+		<string>iTunesTop100</string>
+	</dict>
+	<key>Others</key>
+	<array>
+		<dict>
+			<key>id</key>
+			<string>Popular+Music</string>
+			<key>name</key>
+			<string>Trending Music</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>Popular+Audio</string>
+			<key>name</key>
+			<string>Trending Audio</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>alternative%20rock</string>
+			<key>name</key>
+			<string>Alternative</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>ambient</string>
+			<key>name</key>
+			<string>Ambience</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>classical</string>
+			<key>name</key>
+			<string>Classical</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>country</string>
+			<key>name</key>
+			<string>Country</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>danceedm</string>
+			<key>name</key>
+			<string>Electronic Dance</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>dancehall</string>
+			<key>name</key>
+			<string>Reggae</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>deephouse</string>
+			<key>name</key>
+			<string>Deep House</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>disco</string>
+			<key>name</key>
+			<string>Disco</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>drumbass</string>
+			<key>name</key>
+			<string>D&apos;n&apos;B</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>dubstep</string>
+			<key>name</key>
+			<string>Dubstep</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>electronic</string>
+			<key>name</key>
+			<string>Electronic</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>folksingersongwriter</string>
+			<key>name</key>
+			<string>Folk</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>hiphoprap</string>
+			<key>name</key>
+			<string>Rap &amp; Hip-Hop &amp; R&amp;B</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>house</string>
+			<key>name</key>
+			<string>House</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>indie</string>
+			<key>name</key>
+			<string>Independent</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>jazzblues</string>
+			<key>name</key>
+			<string>Blues &amp; Jazz</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>latin</string>
+			<key>name</key>
+			<string>Latin American</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>metal</string>
+			<key>name</key>
+			<string>Heavy Metal</string>
+		</dict>
+	</array>
+</dict>
+</plist>

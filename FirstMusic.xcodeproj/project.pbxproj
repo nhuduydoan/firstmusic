@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C0D5E8F1D4BCAB5008E83A6 /* Categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C0D5E8E1D4BCAB5008E83A6 /* Categories.plist */; };
 		5CB5FF681D4516FB005DC8F1 /* FMPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB5FF661D4516FB005DC8F1 /* FMPlayerViewController.m */; };
 		5CB5FF691D4516FB005DC8F1 /* FMPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB5FF671D4516FB005DC8F1 /* FMPlayerViewController.xib */; };
 		5CB5FF701D452225005DC8F1 /* FMApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB5FF6F1D452225005DC8F1 /* FMApplication.m */; };
@@ -14,7 +15,6 @@
 		5CE73A1A1D3D15A1000877A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE73A191D3D15A1000877A1 /* AppDelegate.m */; };
 		5CE73A221D3D15A1000877A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE73A211D3D15A1000877A1 /* Assets.xcassets */; };
 		5CE73A251D3D15A1000877A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CE73A231D3D15A1000877A1 /* LaunchScreen.storyboard */; };
-		5CFEFF571D4BB99E001FC47B /* Category.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5CFEFF561D4BB99E001FC47B /* Category.strings */; };
 		5CFEFF611D4BBAC0001FC47B /* FMGenresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFEFF5F1D4BBAC0001FC47B /* FMGenresViewController.m */; };
 		5CFEFF621D4BBAC0001FC47B /* FMGenresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CFEFF601D4BBAC0001FC47B /* FMGenresViewController.xib */; };
 		5CFF3FD01D46595E001D7E6B /* APISoundcCoud.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF3FBE1D46595E001D7E6B /* APISoundcCoud.m */; };
@@ -308,6 +308,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C0D5E8E1D4BCAB5008E83A6 /* Categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Categories.plist; sourceTree = "<group>"; };
 		5CB5FF651D4516FB005DC8F1 /* FMPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMPlayerViewController.h; sourceTree = "<group>"; };
 		5CB5FF661D4516FB005DC8F1 /* FMPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMPlayerViewController.m; sourceTree = "<group>"; };
 		5CB5FF671D4516FB005DC8F1 /* FMPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMPlayerViewController.xib; sourceTree = "<group>"; };
@@ -321,7 +322,6 @@
 		5CE73A241D3D15A1000877A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CE73A261D3D15A1000877A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CE73A571D3D23C0000877A1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		5CFEFF561D4BB99E001FC47B /* Category.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Category.strings; sourceTree = "<group>"; };
 		5CFEFF5E1D4BBAC0001FC47B /* FMGenresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMGenresViewController.h; sourceTree = "<group>"; };
 		5CFEFF5F1D4BBAC0001FC47B /* FMGenresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMGenresViewController.m; sourceTree = "<group>"; };
 		5CFEFF601D4BBAC0001FC47B /* FMGenresViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMGenresViewController.xib; sourceTree = "<group>"; };
@@ -653,7 +653,7 @@
 		5C6A48121D43DFA500D39301 /* Resouces */ = {
 			isa = PBXGroup;
 			children = (
-				5CFEFF561D4BB99E001FC47B /* Category.strings */,
+				5C0D5E8E1D4BCAB5008E83A6 /* Categories.plist */,
 				5C6A48161D43DFC800D39301 /* Images */,
 			);
 			path = Resouces;
@@ -1341,6 +1341,7 @@
 				FFC3DCC81D449A060036658A /* btn_shuffle_on@3x.png in Resources */,
 				FFC3DCA11D449A060036658A /* btn_music_effect@2x.png in Resources */,
 				FFC3DD751D449A060036658A /* SlideToUnlockMask.png in Resources */,
+				5C0D5E8F1D4BCAB5008E83A6 /* Categories.plist in Resources */,
 				FFC3DD171D449A060036658A /* icon-xx@3x.png in Resources */,
 				FFC3DCD01D449A060036658A /* btn_timer@2x.png in Resources */,
 				FFC3DCB91D449A060036658A /* btn_repeat_none@2x.png in Resources */,
@@ -1382,7 +1383,6 @@
 				FFC3DD7C1D449A060036658A /* track_noimg.png in Resources */,
 				FFC3DC9F1D449A060036658A /* btn_music_effect_sel@3x.png in Resources */,
 				FFC3DD331D449A060036658A /* LockScreen.png in Resources */,
-				5CFEFF571D4BB99E001FC47B /* Category.strings in Resources */,
 				FFC3DCEB1D449A060036658A /* icon_added-to-library@3x.png in Resources */,
 				FFC3DD681D449A060036658A /* restorepurchase@3x.png in Resources */,
 				FFC3DCB51D449A060036658A /* btn_repeat_all.png in Resources */,
