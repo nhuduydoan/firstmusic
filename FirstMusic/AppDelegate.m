@@ -7,10 +7,10 @@
 //
 
 #import "AppDelegate.h"
-#import "FMHomeViewController.h"
 #import "NDDTabBarController.h"
 #import "FMNavigationController.h"
-@import Firebase;
+#import "FMGenresViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -20,7 +20,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [FIRApp configure];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     NDDTabBarController *tabbar = [[NDDTabBarController alloc] init];
     tabbar.viewControllers = [self listViews];
@@ -36,26 +35,26 @@
 
 - (NSArray *) listViews {
     
-    FMHomeViewController *homeView = [[FMHomeViewController alloc] init];
+    FMGenresViewController *homeView = [[FMGenresViewController alloc] init];
     FMNavigationController *navHomeView = [[FMNavigationController alloc] initWithRootViewController:homeView];
     homeView.title = @"Genres";
     navHomeView.tabBarItem.title = @"Genres";
     [navHomeView.tabBarItem setImage:[UIImage imageNamed:@"home"]];
     
     
-    FMHomeViewController *tab2 = [[FMHomeViewController alloc] init];
+    FMGenresViewController *tab2 = [[FMGenresViewController alloc] init];
     FMNavigationController *navTab2 = [[FMNavigationController alloc] initWithRootViewController:tab2];
     tab2.title = @"Search";
     navTab2.tabBarItem.title = @"Search";
     [navTab2.tabBarItem setImage:[UIImage imageNamed:@"icon_tab_search"]];
     
-    FMHomeViewController *myPlaylist = [[FMHomeViewController alloc] init];
+    FMGenresViewController *myPlaylist = [[FMGenresViewController alloc] init];
     FMNavigationController *navMyPlaylist = [[FMNavigationController alloc] initWithRootViewController:myPlaylist];
     myPlaylist.title = @"MyPlaylist";
     navMyPlaylist.tabBarItem.title = @"MySongs";
     [navMyPlaylist.tabBarItem setImage:[UIImage imageNamed:@"icon_Tabbar_playlist"]];
     
-    FMHomeViewController *settingView = [[FMHomeViewController alloc] init];
+    FMGenresViewController *settingView = [[FMGenresViewController alloc] init];
     FMNavigationController *navSettingView = [[FMNavigationController alloc] initWithRootViewController:settingView];
     settingView.title = @"Setting";
     navSettingView.tabBarItem.title = @"Setting";

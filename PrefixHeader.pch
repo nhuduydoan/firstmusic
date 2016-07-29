@@ -19,6 +19,7 @@
 
 #import "FMApplication.h"
 #import "FMTrackModel.h"
+#import "APISoundcCoud.h"
 #import "FMPlayerViewController.h"
 
 #endif /* PrefixHeader_pch */

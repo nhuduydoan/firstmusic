@@ -9,5 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface APISoundcCoud : NSObject
--(void)getAIP:(void (^)(NSData *data, NSError *error))completionHandler;
+
+- (void) allCategoriesSoundcloudWithCompleteBlock:(void (^)(NSArray *datas, NSError *error))completeBlock;
+
+- (void)getAIP:(void (^)(NSData *data, NSError *error))completionHandler;
+
 @end

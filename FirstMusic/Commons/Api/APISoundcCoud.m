@@ -8,9 +8,28 @@
 
 #import "APISoundcCoud.h"
 
+
 @implementation APISoundcCoud
 
--(void)getAIP:(void (^)(NSData *data, NSError *error))completionHandler{
+- (void) allCategoriesSoundcloudWithCompleteBlock:(void (^)(NSArray *, NSError *))completeBlock {
+    
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Category" ofType:@"strings"];
+    NSArray *datas = [NSArray arrayWithContentsOfFile:filePath];
+    if (datas) {
+        
+        NSLog(@" === Category dictionnary ===");
+        for (NSDictionary *dict in datas) {
+            NSLog(@"%@", dict);
+        }
+    }
+    
+    if (completeBlock) {
+        completeBlock(datas, nil);
+    }
+}
+
+-(void)getAIP:(void (^)(NSData *data, NSError *error))completionHandler {
+    
 //    NSString * sURL = @"https://api-v2.soundcloud.com/charts?kind=top&genre=soundcloud%3Agenres%3Aall-music&limit=20&offset=0&linked_partitioning=1&client_id=Fiy8xlRI0xJNNGDLbPmGUjTpPRESPx8C";
     NSString * sturls = @"https://api.soundcloud.com/explore/sounds/category?limit=10&offset=0&linked_partitioning=1";
     NSString * strUrl = @"https://api.soundcloud.com/tracks.json?client_id=Fiy8xlRI0xJNNGDLbPmGUjTpPRESPx8C&filter=all&order=hotness&offset=0&q=h&limit=50";
@@ -24,6 +43,7 @@
         }
     }];
     [dataTask resume];
+    
  }
 
 

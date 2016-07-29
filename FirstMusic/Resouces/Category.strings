@@ -1,0 +1,116 @@
+/* 
+  Category.strings
+  FirstMusic
+
+  Created by Nhữ Duy Đoàn on 7/29/16.
+  Copyright © 2016 com.nhuduydoan. All rights reserved.
+*/
+{
+    "categories" : [
+    {
+        "id": "itunestop100",
+        "displayname": "Genres-iTuneTop100",
+        "name": "iTunes Top 100"
+    },
+    {
+        "id": "Popular+Music",
+        "displayname": "Genres-TrendingMusic",
+        "name": "Popular Music"
+    },
+    {
+        "id": "Popular+Audio",
+        "displayname": "Genres-TrendingAudio",
+        "name": "Popular Audio"
+    },
+    {
+        "id": "alternative%20rock",
+        "displayname": "Genres-Alternative",
+        "name": "Alternative Rock"
+    },
+    {
+        "id": "ambient",
+        "displayname": "Genres-Ambience",
+        "name": "Ambient"
+    },
+    {
+        "id": "classical",
+        "displayname": "Genres-Classical",
+        "name": "Classical"
+    },
+    {
+        "id": "country",
+        "displayname": "Genres-Countrty",
+        "name": "Country"
+    },
+    {
+        "id": "danceedm",
+        "displayname": "Genres-ElectroniceDance",
+        "name": "Dance & EDM"
+    },
+    {
+        "id": "dancehall",
+        "displayname": "Genres-Reggae",
+        "name": "Dancehall"
+    },
+    {
+        "id": "deephouse",
+        "displayname": "Genres-DeepHouse",
+        "name": "Deep House"
+    },
+    {
+        "id": "disco",
+        "displayname": "Genres-Disco",
+        "name": "Disco"
+    },
+    {
+        "id": "drumbass",
+        "displayname": "Genres-DnB",
+        "name": "Drum & Bass"
+    },
+    {
+        "id": "dubstep",
+        "displayname": "Genres-DubStep",
+        "name": "Dubstep"
+    },
+    {
+        "id": "electronic",
+        "displayname": "Genres-Electronic",
+        "name": "Electronic"
+    },
+    {
+        "id": "folksingersongwriter",
+        "displayname": "Genres-Folk",
+        "name": "Folk & Singer-Songwriter"
+    },
+    {
+        "id": "hiphoprap",
+        "displayname": "Genres-RapHipHopRB",
+        "name": "Hip Hop & Rap"
+    },
+    {
+        "id": "house",
+        "displayname": "Genres-House",
+        "name": "House"
+    },
+    {
+        "id": "indie",
+        "displayname": "Genres-Independent",
+        "name": "Indie"
+    },
+    {
+        "id": "jazzblues",
+        "displayname": "Genres-BluesJazz",
+        "name": "Jazz & Blues"
+    },
+    {
+        "id": "latin",
+        "displayname": "Genres-LatinAmerican",
+        "name": "Latin"
+    },
+    {
+        "id": "metal",
+        "displayname": "Genres-HeavyMetal",
+        "name": "Metal"
+    }
+    ]
+}
