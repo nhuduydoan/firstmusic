@@ -52,7 +52,7 @@
     FMHomeViewController *myPlaylist = [[FMHomeViewController alloc] init];
     FMNavigationController *navMyPlaylist = [[FMNavigationController alloc] initWithRootViewController:myPlaylist];
     myPlaylist.title = @"MyPlaylist";
-    navMyPlaylist.tabBarItem.title = @"MyList";
+    navMyPlaylist.tabBarItem.title = @"MySongs";
     [navMyPlaylist.tabBarItem setImage:[UIImage imageNamed:@"icon_Tabbar_playlist"]];
     
     FMHomeViewController *settingView = [[FMHomeViewController alloc] init];
@@ -60,8 +60,6 @@
     settingView.title = @"Setting";
     navSettingView.tabBarItem.title = @"Setting";
     [navSettingView.tabBarItem setImage:[UIImage imageNamed:@"icon_Tabbar_setting_left"]];
-    
-    
     
     return @[navHomeView, navTab2, navMyPlaylist, navSettingView];
 }

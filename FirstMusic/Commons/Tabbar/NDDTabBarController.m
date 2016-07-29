@@ -232,6 +232,7 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hideTabbar) name:@"HideTabBar" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showTabBar) name:@"ShowTabBar" object:nil];
+    
     if (!_isProVersion) {
         
         UIView *bannerAds = [[FMGoogleAds shareInstance] loadBannerAds];

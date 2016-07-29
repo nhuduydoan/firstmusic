@@ -57,7 +57,7 @@
     
     [UIView animateWithDuration:0.25 animations:^{
         
-        [self.playerVC.view setFrame:self.view.frame];
+        [self.playerVC.view setFrame:frame];
         
     } completion:^(BOOL finished) {
         

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C0DABE01D4BB18200E4AD84 /* Categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C0DABDF1D4BB18200E4AD84 /* Categories.plist */; };
 		5CB5FF681D4516FB005DC8F1 /* FMPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB5FF661D4516FB005DC8F1 /* FMPlayerViewController.m */; };
 		5CB5FF691D4516FB005DC8F1 /* FMPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB5FF671D4516FB005DC8F1 /* FMPlayerViewController.xib */; };
 		5CB5FF701D452225005DC8F1 /* FMApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB5FF6F1D452225005DC8F1 /* FMApplication.m */; };
@@ -309,6 +310,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C0DABDF1D4BB18200E4AD84 /* Categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Categories.plist; sourceTree = "<group>"; };
 		5CB5FF651D4516FB005DC8F1 /* FMPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMPlayerViewController.h; sourceTree = "<group>"; };
 		5CB5FF661D4516FB005DC8F1 /* FMPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMPlayerViewController.m; sourceTree = "<group>"; };
 		5CB5FF671D4516FB005DC8F1 /* FMPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMPlayerViewController.xib; sourceTree = "<group>"; };
@@ -948,6 +950,7 @@
 		5CE73A091D3D15A1000877A1 = {
 			isa = PBXGroup;
 			children = (
+				5C0DABDF1D4BB18200E4AD84 /* Categories.plist */,
 				FF07C1C11D4646C500E27222 /* GoogleService-Info.plist */,
 				FF3A9EF71D452E7D00696763 /* GoogleMobileAds.framework */,
 				5CE73A571D3D23C0000877A1 /* PrefixHeader.pch */,
@@ -1308,6 +1311,7 @@
 				FF07C1C21D4646C500E27222 /* GoogleService-Info.plist in Resources */,
 				FFC3DCC21D449A060036658A /* btn_share@3x.png in Resources */,
 				FFC3DD551D449A060036658A /* playing_mask@2x.png in Resources */,
+				5C0DABE01D4BB18200E4AD84 /* Categories.plist in Resources */,
 				FFC3DCD61D449A060036658A /* editingicon@2x.png in Resources */,
 				FFC3DD5B1D449A060036658A /* playlist_noimg@2x.png in Resources */,
 				FFC3DD541D449A060036658A /* playing_mask.png in Resources */,

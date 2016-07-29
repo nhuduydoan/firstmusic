@@ -18,6 +18,7 @@
 @interface NDDTabbarItem : UIView
 
 @property (weak, nonatomic) id<NDDTabbarItemDelegate> delegate;
+
 - (instancetype)initWithText:(NSString *)text icon:(UIImage *)image;
 - (void) setLineViewColor:(UIColor *)color;
 
