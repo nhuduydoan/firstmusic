@@ -7,8 +7,14 @@
 //
 
 #import "FMSearchViewController.h"
+//#import "FMHomeTableViewCell.h"
 
-@interface FMSearchViewController ()
+#define HomeCell @"HomeTableViewCell"
+
+@interface FMSearchViewController ()<UITableViewDelegate, UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UISearchBar *searchView;
+@property (weak, nonatomic) NSArray *dataSearch;
 
 @end
 
@@ -16,7 +22,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+    self.dataSearch = [[NSArray alloc] initWithObjects:@"cell 1", @"cell 2",@"cell 3",@"cell 4",@"cell 5",@"cell 6", nil];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +33,17 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.dataSearch.count;
 }
-*/
+//-(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+////    FMHomeTableViewCell * cell = (FMHomeTableViewCell *)[tableView dequeueReusableCellWithIdentifier:HomeCell];
+////    if(!cell){
+////        cell = [FMHomeTableViewCell cellWithIdentifier:HomeCell];
+////    }
+////    NSLog(@"%ld",self.dataSearch.count);
+////    cell.textLabel.text = [self.dataSearch objectAtIndex:indexPath.row];
+////    return cell;
+//}
 
 @end

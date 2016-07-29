@@ -7,6 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FMSearchViewController">
             <connections>
+                <outlet property="searchView" destination="RAz-HZ-jtl" id="gtC-k5-Fmp"/>
+                <outlet property="tableView" destination="Akk-Lf-Zxw" id="MRH-oz-Pso"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,6 +16,19 @@
         <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Akk-Lf-Zxw">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="0.93707164299507206" blue="0.46055810057419577" alpha="1" colorSpace="calibratedRGB"/>
+                    <searchBar key="tableHeaderView" contentMode="redraw" id="RAz-HZ-jtl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="1" green="0.0081322516892656793" blue="0.071834219996538273" alpha="1" colorSpace="calibratedRGB"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </searchBar>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="1" green="0.75324462887656907" blue="0.38609015086330079" alpha="1" colorSpace="calibratedRGB"/>
             <point key="canvasLocation" x="301" y="342"/>
         </view>

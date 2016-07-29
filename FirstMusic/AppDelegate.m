@@ -11,6 +11,10 @@
 #import "FMNavigationController.h"
 #import "FMGenresViewController.h"
 
+#import "FMSearchViewController.h"
+#import "FMMyPlayListViewController.h"
+#import "FMSettingViewController.h"
+@import Firebase;
 @interface AppDelegate ()
 
 @end
@@ -42,19 +46,19 @@
     [navHomeView.tabBarItem setImage:[UIImage imageNamed:@"home"]];
     
     
-    FMGenresViewController *tab2 = [[FMGenresViewController alloc] init];
+    FMSearchViewController *tab2 = [[FMSearchViewController alloc] init];
     FMNavigationController *navTab2 = [[FMNavigationController alloc] initWithRootViewController:tab2];
     tab2.title = @"Search";
     navTab2.tabBarItem.title = @"Search";
     [navTab2.tabBarItem setImage:[UIImage imageNamed:@"icon_tab_search"]];
     
-    FMGenresViewController *myPlaylist = [[FMGenresViewController alloc] init];
+    FMMyPlayListViewController *myPlaylist = [[FMMyPlayListViewController alloc] init];
     FMNavigationController *navMyPlaylist = [[FMNavigationController alloc] initWithRootViewController:myPlaylist];
     myPlaylist.title = @"MyPlaylist";
     navMyPlaylist.tabBarItem.title = @"MySongs";
     [navMyPlaylist.tabBarItem setImage:[UIImage imageNamed:@"icon_Tabbar_playlist"]];
     
-    FMGenresViewController *settingView = [[FMGenresViewController alloc] init];
+    FMSettingViewController *settingView = [[FMSettingViewController alloc] init];
     FMNavigationController *navSettingView = [[FMNavigationController alloc] initWithRootViewController:settingView];
     settingView.title = @"Setting";
     navSettingView.tabBarItem.title = @"Setting";
