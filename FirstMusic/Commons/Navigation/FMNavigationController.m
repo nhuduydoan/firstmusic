@@ -10,7 +10,6 @@
 @interface FMNavigationController () <UINavigationControllerDelegate>
 
 @property (strong, nonatomic) UIBarButtonItem *showPlayer;
-@property (strong, nonatomic) UINavigationController *playerVC;
 
 @end
 
@@ -21,10 +20,11 @@
     // Do any additional setup after loading the view.
     
     self.delegate = self;
-    self.showPlayer = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"arrowdown"] style:UIBarButtonItemStylePlain target:self action:@selector(showPlayerViewController)];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hidePlayerViewController) name:@"HidePlayerController" object:nil];
+    self.navigationBar.translucent = NO;
     [self.navigationBar setTintColor:navigationbarTintColor];
-    [self.navigationBar setBackgroundColor:navigationbarBackgroundColor];
+    [self.navigationBar setBarTintColor:navigationbarDefaultColor];
+    
+    self.showPlayer = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"arrowdown"] style:UIBarButtonItemStylePlain target:self action:@selector(showPlayerViewController)];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,46 +39,7 @@
 
 - (void) showPlayerViewController {
     
-    self.playerVC = [[UINavigationController alloc] initWithRootViewController:fmPlayer];
-    [self displayViewController:self.playerVC];
-    
-    [UIView animateWithDuration:0.25 animations:^{
-        
-        [self.playerVC.view setFrame:self.view.frame];
-    }];
-    
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"HideTabBar" object:nil];
-}
-
-- (void) hidePlayerViewController {
-    
-    CGRect frame = self.view.bounds;
-    frame.origin.y = -frame.size.height;
-    
-    [UIView animateWithDuration:0.25 animations:^{
-        
-        [self.playerVC.view setFrame:frame];
-        
-    } completion:^(BOOL finished) {
-        
-        [self.playerVC willMoveToParentViewController:nil];
-        [self.playerVC.view removeFromSuperview];
-        [self.playerVC removeFromParentViewController];
-        self.playerVC = nil;
-    }];
-    
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"ShowTabBar" object:nil];
-}
-
-- (void) displayViewController:(UIViewController *)childVC {
-    
-    [self addChildViewController:childVC];
-    [childVC didMoveToParentViewController:self];
-    CGRect frame = self.view.bounds;
-    frame.origin.y = - frame.size.height;
-    [childVC.view setFrame:frame];
-    childVC.view.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleWidth |UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin |UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleBottomMargin;
-    [self.view addSubview:childVC.view];
+    [fmPlayer show];
 }
 
 @end

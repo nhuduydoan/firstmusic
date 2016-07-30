@@ -211,6 +211,8 @@
  *  **************************************************************
  */
 
+#pragma mark - Tabbar Controller
+
 @interface NDDTabBarController ()<UITabBarControllerDelegate, NDDTabBarDelegate, UITabBarDelegate>
 
 @property (nonatomic) BOOL isProVersion;
@@ -229,9 +231,6 @@
     self.hideTabBar = NO;
     [self setUpColorForTabBar];
     [self setViewControllers:self.viewControllers];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hideTabbar) name:@"HideTabBar" object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showTabBar) name:@"ShowTabBar" object:nil];
     
     if (!_isProVersion) {
         
@@ -257,6 +256,8 @@
     [self updateLayout];
 }
 
+#pragma mark - setup method
+
 - (void) setUpColorForTabBar {
     
     [self.tabbar setDelegate:self];
@@ -265,13 +266,6 @@
     [self.tabbar.topLineView setBackgroundColor:[UIColor clearColor]];
     [self.tabbar setBackgroundColor:[UIColor lightGrayColor]];
     [self.tabbar setBackgroungSelectedColor:[UIColor blueColor]];
-}
-
-#pragma mark - public method
-
-- (void)setSelectedViewControllerIndex:(NSInteger)index {
-    
-    [self tabBar:self.tabbar didSelectItem:[self.viewControllers[index] tabBarItem]];
 }
 
 - (void) setViewControllers:(NSArray *)viewControllers {
@@ -385,6 +379,13 @@
     }
 }
 
+#pragma mark - public method
+
+- (void)setSelectedViewControllerIndex:(NSInteger)index {
+    
+    [self tabBar:self.tabbar didSelectItem:[self.viewControllers[index] tabBarItem]];
+}
+
 - (void) hideTabbar:(BOOL)hidden withAnamiation:(BOOL)animation {
     
     self.hideTabBar = hidden;
@@ -450,16 +451,6 @@
             }];
         }
     }  
-}
-
-- (void) hideTabbar {
-    
-    [self hideTabbar:YES withAnamiation:YES];
-}
-
-- (void) showTabBar {
-    
-    [self hideTabbar:NO withAnamiation:YES];
 }
 
 @end

@@ -10,4 +10,8 @@
 
 @interface FMTracksTableVC : UIViewController
 
+- (instancetype) initWithListDatas:(NSArray<FMTrackModel *> *)listDatas;
+- (void) reloadData;
+- (void) reloadData:(NSArray<FMTrackModel *> *)listDatas;
+
 @end

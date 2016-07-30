@@ -38,6 +38,8 @@
 
 - (void) displayWithTrack:(FMTrackModel *)track {
     
+    self.titleLabel.text = track.displayName;
+    self.noteLabel.text = [NSString stringWithFormat:@"id: %ld", track.trackId];
 }
 
 @end

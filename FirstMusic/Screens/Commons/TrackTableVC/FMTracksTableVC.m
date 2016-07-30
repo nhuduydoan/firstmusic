@@ -14,13 +14,13 @@
 @interface FMTracksTableVC () <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
-@property (strong, nonatomic) NSMutableArray<FMTrackModel *> *listDatas;
+@property (strong, nonatomic) NSArray<FMTrackModel *> *listDatas;
 
 @end
 
 @implementation FMTracksTableVC
 
-- (instancetype) initWithListDatas:(NSMutableArray<FMTrackModel *> *)listDatas {
+- (instancetype) initWithListDatas:(NSArray<FMTrackModel *> *)listDatas {
     self = [super init];
     
     if (self) {
@@ -35,13 +35,28 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    [self.tableview registerNib:[UINib nibWithNibName:NSStringFromClass([UITableViewCell class]) bundle:nil] forCellReuseIdentifier:TrackTableViewCell];
+    [self.tableview registerNib:[UINib nibWithNibName:NSStringFromClass([FMTrackTableViewCell class]) bundle:nil] forCellReuseIdentifier:TrackTableViewCell];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - public method
+
+- (void) reloadData {
+    
+    [self.tableview reloadData];
+}
+
+- (void) reloadData:(NSArray<FMTrackModel *> *)listDatas {
+    
+    self.listDatas = listDatas;
+    [self.tableview reloadData];
+}
+
+#pragma mark - table view data soure
 
 - (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
     

@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-#define navigationbarBackgroundColor [UIColor blueColor]
 #define navigationbarTintColor [UIColor redColor]
+#define navigationbarBackgroundColor [UIColor yellowColor]
+#define navigationbarDefaultColor [UIColor colorWithRed:0.937255 green:0.937255 blue:0.956863 alpha:0.7]
 
 @interface FMApplication : NSObject
 

@@ -15,6 +15,7 @@
 @property (strong, nonatomic) FMTrackModel *currentTrack;
 
 + (instancetype) shareInstance;
+- (void) show;
 - (void) playWithTrack:(FMTrackModel *)track;
  
 @end

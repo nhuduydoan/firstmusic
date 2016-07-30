@@ -7,11 +7,12 @@
 //
 
 #import "FMPlayerViewController.h"
+#import "NDDTabBarController.h"
 
 @interface FMPlayerViewController ()
 
-@property (strong, nonatomic) UIBarButtonItem *hideItem;
-@property (strong, nonatomic) UIBarButtonItem *songsItem;
+@property (weak, nonatomic) IBOutlet UIButton *leftButton;
+@property (weak, nonatomic) IBOutlet UIButton *rightButton;
 
 @end
 
@@ -38,12 +39,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    self.hideItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"exit"] style:UIBarButtonItemStylePlain target:self action:@selector(touchOnHideItem)];
-    self.songsItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icon_more_option"] style:UIBarButtonItemStylePlain target:self action:@selector(touchOnSongsItem)];
-    self.navigationItem.leftBarButtonItem = self.hideItem;
-    self.navigationItem.rightBarButtonItem = self.songsItem;
-    
-    [self.navigationController.navigationBar setTintColor:[UIColor redColor]];
+    [self.leftButton setImage:[UIImage imageNamed:@"exit"] forState:UIControlStateNormal];
+    [self.rightButton setImage:[UIImage imageNamed:@"icon_more_option"] forState:UIControlStateNormal];
 }
 
 - (void) viewWillAppear:(BOOL)animated {
@@ -57,13 +54,82 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void) touchOnHideItem {
+#pragma mark - set up view
+
+#pragma mark - private method
+
+- (IBAction)touchOnleftButton:(id)sender {
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"HidePlayerController" object:nil];
+    [self hide];
 }
 
-- (void) touchOnSongsItem {
+- (IBAction)touchOnRightButton:(id)sender {
     
+}
+
+- (void) hideTabbar:(BOOL)hide withAnimation:(BOOL)animated {
+    
+    UIViewController *tabbarVC = self.parentViewController;
+    while (tabbarVC.parentViewController && tabbarVC.class != [NDDTabBarController class]) {
+        
+        tabbarVC = tabbarVC.parentViewController;
+    }
+    
+    if (tabbarVC.class == [NDDTabBarController class]) {
+        
+        [((NDDTabBarController *)tabbarVC) hideTabbar:hide withAnamiation:animated];
+    }
+}
+
+#pragma mark - public method
+
+- (void) show {
+    
+    UIViewController *rootVC = [[UIApplication sharedApplication].delegate window].rootViewController;
+    while (rootVC.parentViewController && rootVC.parentViewController.class != self.class) {
+        
+        rootVC = rootVC.parentViewController;
+    }
+    
+    [self displayInViewController:rootVC];
+    
+    CGRect frame = rootVC.view.bounds;
+    [UIView animateWithDuration:0.25 animations:^{
+        
+        [fmPlayer.view setFrame:frame];
+    }];
+    
+    [self hideTabbar:YES withAnimation:YES];
+}
+
+- (void) hide {
+    
+    CGRect frame = self.view.bounds;
+    frame.origin.y = -frame.size.height;
+    
+    [UIView animateWithDuration:0.25 animations:^{
+        
+        [fmPlayer.view setFrame:frame];
+        
+    } completion:^(BOOL finished) {
+        
+        [fmPlayer willMoveToParentViewController:nil];
+        [fmPlayer.view removeFromSuperview];
+        [fmPlayer removeFromParentViewController];
+    }];
+    
+    [self hideTabbar:NO withAnimation:YES];
+}
+
+- (void) displayInViewController:(UIViewController *)vc {
+    
+    [vc addChildViewController:self];
+    [self didMoveToParentViewController:self];
+    CGRect frame = vc.view.bounds;
+    frame.origin.y = - frame.size.height;
+    [self.view setFrame:frame];
+    self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [vc.view addSubview:self.view];
 }
 
 - (void) playWithTrack:(FMTrackModel *)track {
