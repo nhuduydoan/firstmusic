@@ -13,7 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet UISearchBar *searchView;
 @property (strong, nonatomic) FMTracksTableVC *trackTableView;
-@property (strong, nonatomic) NSMutableArray<FMTrackModel *> *dataSearch;
+@property (strong, nonatomic) NSMutableArray<FMTrackModel *> *searchDatas;
 
 @end
 
@@ -32,19 +32,24 @@
 
 #pragma mark - setup view method
 
+- (void) setupSearchBar {
+    
+    [self.trackTableView reloadData:self.searchDatas];
+}
+
 - (void) setupData {
     
-    self.dataSearch = [NSMutableArray new];
+    self.searchDatas = [NSMutableArray new];
     
     for (int i = 0; i < 20; i ++) {
         
         FMTrackModel *track = [FMTrackModel new];
         track.trackId = i + 1;
         track.displayName = [NSString stringWithFormat:@"Track Play %d", i];
-        [self.dataSearch addObject:track];
+        [self.searchDatas addObject:track];
     }
     
-    self.trackTableView = [[FMTracksTableVC alloc] initWithListDatas:self.dataSearch];
+    self.trackTableView = [[FMTracksTableVC alloc] initWithListDatas:self.searchDatas];
     [self displayViewController:self.trackTableView];
 }
 
