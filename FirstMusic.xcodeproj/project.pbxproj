@@ -31,7 +31,6 @@
 		5CFF3FE91D465CAA001D7E6B /* FMTrackTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CFF3FE71D465CAA001D7E6B /* FMTrackTableViewCell.xib */; };
 		FA5E420343117A0328182EAF /* libPods-FirstMusic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE50B603EC8281B1F731FE2 /* libPods-FirstMusic.a */; };
 		FF07C1C21D4646C500E27222 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF07C1C11D4646C500E27222 /* GoogleService-Info.plist */; };
-		FF3A9EF81D452E7D00696763 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF3A9EF71D452E7D00696763 /* GoogleMobileAds.framework */; };
 		FF3A9F051D452F5B00696763 /* FMMyPlayListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3A9EFB1D452F5B00696763 /* FMMyPlayListViewController.m */; };
 		FF3A9F061D452F5B00696763 /* FMMyPlayListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF3A9EFC1D452F5B00696763 /* FMMyPlayListViewController.xib */; };
 		FF3A9F071D452F5B00696763 /* FMSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3A9EFF1D452F5B00696763 /* FMSearchViewController.m */; };
@@ -349,7 +348,6 @@
 		EEAEFFA44C5939CA81FFF431 /* Pods-FirstMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstMusic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirstMusic/Pods-FirstMusic.debug.xcconfig"; sourceTree = "<group>"; };
 		F3C26FB5E0F3EF239D88278B /* Pods-FirstMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstMusic.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirstMusic/Pods-FirstMusic.release.xcconfig"; sourceTree = "<group>"; };
 		FF07C1C11D4646C500E27222 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "FirstMusic/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		FF3A9EF71D452E7D00696763 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "GoogleMobileAdsSdkiOS-7.9.1/GoogleMobileAds.framework"; sourceTree = "<group>"; };
 		FF3A9EFA1D452F5B00696763 /* FMMyPlayListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMMyPlayListViewController.h; sourceTree = "<group>"; };
 		FF3A9EFB1D452F5B00696763 /* FMMyPlayListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMMyPlayListViewController.m; sourceTree = "<group>"; };
 		FF3A9EFC1D452F5B00696763 /* FMMyPlayListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMMyPlayListViewController.xib; sourceTree = "<group>"; };
@@ -633,7 +631,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF3A9EF81D452E7D00696763 /* GoogleMobileAds.framework in Frameworks */,
 				FA5E420343117A0328182EAF /* libPods-FirstMusic.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -947,7 +944,6 @@
 			isa = PBXGroup;
 			children = (
 				FF07C1C11D4646C500E27222 /* GoogleService-Info.plist */,
-				FF3A9EF71D452E7D00696763 /* GoogleMobileAds.framework */,
 				5CE73A571D3D23C0000877A1 /* PrefixHeader.pch */,
 				5CE73A141D3D15A1000877A1 /* FirstMusic */,
 				5CE73A131D3D15A1000877A1 /* Products */,
@@ -1187,6 +1183,7 @@
 				TargetAttributes = {
 					5CE73A111D3D15A1000877A1 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = QZQXR3HEM8;
 					};
 				};
 			};
@@ -1520,13 +1517,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FirstMusic-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DAB5C5396F3816EFDB55C4A8 /* [CP] Copy Pods Resources */ = {
@@ -1678,6 +1678,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = QZQXR3HEM8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-7.9.1",
@@ -1696,6 +1697,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = QZQXR3HEM8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-7.9.1",
